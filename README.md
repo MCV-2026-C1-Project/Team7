@@ -1,7 +1,7 @@
 # Museum Painting Retrieval — Team 7
 
 <p align="center">
-  <img src="assets/unified_selection.png" alt="Museum painting retrieval — method selection overview" width="820">
+  <img src="https://raw.githubusercontent.com/MCV-2026-C1-Project/Team7/submission/Week%202/assets/painting.jpeg" alt="Museum painting retrieval — example painting" width="820">
 </p>
 
 <p align="center">
