@@ -1,0 +1,4 @@
+method,descriptor,dimension,qsd1_map5,qsd2_map5,mean_map5,worst_map5,mean_map1,submission,default
+week2_cropped,Lab / 16 bins / L1,2304,1.0,0.9361111111111111,0.9680555555555556,0.9361111111111111,0.95,method1,True
+week2_method2,YCbCr / 32 bins / L1,4608,0.9777777777777777,0.95,0.9638888888888888,0.95,0.95,method2,False
+week2_method1,Lab / 16 bins / Hellinger,2304,0.9666666666666667,0.9344444444444444,0.9505555555555556,0.9344444444444444,0.9333333333333333,Not submitted,False

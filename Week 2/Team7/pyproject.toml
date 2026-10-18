@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "content-based-image-retrieval"
+version = "0.2.0"
+description = "Museum painting retrieval with color segmentation and spatial histograms."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "opencv-python",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "jupyterlab",
+    "ipykernel",
+    "nbconvert",
+    "matplotlib",
+    "pandas",
+]
+
+[project.scripts]
+cbir = "main:main"
+
+[tool.setuptools]
+packages = ["src"]
+py-modules = ["main"]
