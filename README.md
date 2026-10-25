@@ -1,7 +1,7 @@
 # Museum Painting Retrieval — Team 7
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MCV-2026-C1-Project/Team7/submission/Week%202/assets/painting.jpeg" alt="Museum painting retrieval — example painting" width="820">
+  <img src="https://raw.githubusercontent.com/MCV-2026-C1-Project/Team7/submission/Week%203/assets/week3_retrieval.jpg" alt="Week 3 example: a query photo with two paintings found, each painting crop and its rank-1 match in the database" width="820">
 </p>
 
 <p align="center">
@@ -389,6 +389,8 @@ Week 3/
 ├── requirements.txt
 ├── pyproject.toml
 ├── .gitignore
+├── assets/
+│   └── week3_retrieval.jpg  # example shown at the top of this README
 └── src/
     ├── config.py           # presets, noise thresholds, fusion scales, segmentation parameters
     ├── denoise.py          # noise detection (impulse / grain) and filters

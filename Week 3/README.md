@@ -107,6 +107,8 @@ Week 3/
 ├── requirements.txt
 ├── pyproject.toml
 ├── .gitignore
+├── assets/
+│   └── week3_retrieval.jpg  # example: two paintings found in one photo and their rank-1 matches
 └── src/
     ├── config.py           # presets, noise thresholds, fusion scales, segmentation parameters
     ├── data_loading.py     # images, masks, ground truth, dataset folders
