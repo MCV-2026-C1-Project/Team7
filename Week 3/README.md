@@ -122,8 +122,3 @@ Week 3/
     └── submission.py       # result.pkl / PNG export and the delivery format check
 ```
 
-## Credits
-
-Two-painting segmentation, nested evaluation and export: Albert Puga. Noise detection, LBP / DCT / wavelet descriptors
-and the first colour + texture fusion: Mitali Raj. Filter comparison and noisy examples: Pol Pérez. Week 2
-descriptors, Week 3 integration, texture search and fusion selection: Hao Chen.
