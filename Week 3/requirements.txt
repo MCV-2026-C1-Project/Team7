@@ -1,4 +1,4 @@
 numpy>=1.24
 opencv-python>=4.8
-# The test delivery was produced with numpy==1.26.4 and opencv-contrib-python==4.13.0.92.
-# Other versions give the same first place for every query; a few lower positions of the Top-10 can differ.
+# Tested with numpy 2.2 and OpenCV 5.0 and 4.13. The first place of every query is identical across these versions;
+# a few lower positions of the Top-10 can differ between library versions.
