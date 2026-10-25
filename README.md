@@ -18,9 +18,9 @@
   <img src="https://img.shields.io/badge/Delivery-Top--10%20Rankings-2E8B57" alt="Top 10 rankings">
 </p>
 
-A color-based image retrieval pipeline for matching museum painting photographs against a reference database. The project explores global and spatial color descriptors, background segmentation, histogram distances, and reproducible retrieval evaluation.
+A content-based image retrieval pipeline for matching museum painting photographs against a reference database. The project explores global and spatial color descriptors, background segmentation, histogram distances, and, from Week 3, noise filtering, texture descriptors, and queries with more than one painting, with reproducible retrieval evaluation.
 
-The Week 2 submission provides two fixed retrieval methods, optional development evaluation, validated Top-10 ranking exports, and predicted foreground masks for queries containing background.
+The Week 2 submission provides two fixed retrieval methods, optional development evaluation, validated Top-10 ranking exports, and predicted foreground masks for queries containing background. The Week 3 submission, in [`Week 3/`](Week%203), adds noise detection and filtering, LBP, DCT and wavelet texture descriptors fused with the Week 2 colour descriptor, and one Top-10 ranking for each of up to two paintings per query.
 
 ---
 
@@ -33,6 +33,7 @@ The Week 2 submission provides two fixed retrieval methods, optional development
 - [Installation](#installation)
 - [Dataset setup](#dataset-setup)
 - [Run Week 2](#run-week-2)
+- [Run Week 3](#run-week-3)
 - [Evaluate on development data](#development-evaluation)
 - [Week 1 compatibility](#week-1-compatibility)
 - [Project structure](#project-structure)
@@ -41,30 +42,37 @@ The Week 2 submission provides two fixed retrieval methods, optional development
 
 ## Week 3
 
-Week 3 lives in the [`Week 3/`](Week%203) folder, with its own README, entry point and sources. It adds noise
-detection and filtering, texture descriptors (LBP, DCT, wavelet), and retrieval for queries with up to two paintings.
-The final method fuses the Week 2 colour histograms with the three texture descriptors; on the development sets it
-reaches 30/30 (QSD1-W3) and 39/39 paintings (QSD2-W3, our masks), results the settings were chosen on and not an
-estimate of test accuracy.
+Week 3 lives in the [`Week 3/`](Week%203) folder, with its own README, entry point (`python main.py evaluate | predict | validate`) and sources. The default method, `colour_lbp_dct_wavelet`, works in four steps:
 
-```bash
-cd "Week 3"
-python main.py evaluate --set qsd2_w3
-python main.py predict --out results/week3
-```
+1. **Noise:** two detectors decide, once per image, whether it is noisy. Impulse noise gets a 3 × 3 median, additive grain a bilateral filter, and clean images are left untouched.
+2. **Segmentation (queries with background):** the wall colour is estimated from the image border, and up to two paintings are kept, ordered from left to right.
+3. **Descriptor:** the Week 2 colour histograms are fused with LBP, DCT and db2-wavelet texture descriptors computed on the grey painting. Each part is divided by its mean L1 distance between two database images, then the parts are compared with equal weights and the L1 distance.
+4. **Output:** one Top-10 ranking per painting.
+
+Texture ignores the random hue changes that break the colour histograms, and colour and texture fail on different paintings, so their fusion is stronger than either one alone.
+
+| Development set (Week 3) | Week 2 colour alone | Week 3 final method |
+|---|---:|---:|
+| QSD1-W3, cropped queries (30), top-1 | 26/30 | **30/30** |
+| QSD2-W3, our masks (39 paintings), top-1 | 32/39 | **39/39** |
+| QSD1-W2 / QSD2-W2 (30 + 30), top-1 | 30/30, 26/30 | **30/30, 30/30** |
+
+Segmentation on QSD2-W3 (union mask against the ground truth): precision 0.969, recall 0.987, F1 0.978, with the right number of paintings in all 30 images. These are development results that the settings were chosen on, not estimates of test accuracy, and one painting is worth about 3 points. Details, parameters and commands: [`Week 3/README.md`](Week%203/README.md).
 
 ## Overview
 
-The system retrieves the most visually similar reference paintings for each query image using handcrafted color descriptors.
+The system retrieves the most visually similar reference paintings for each query image using handcrafted color and texture descriptors.
 
 **Main components**
 
 - **Color descriptors:** HSV, Lab, YCbCr, normalized RGB, global histograms, spatial blocks, and pyramids.
+- **Texture descriptors (Week 3):** block LBP, DCT, and wavelet descriptors on the grey painting, fused with the colour descriptor.
+- **Noise filtering (Week 3):** impulse and grain detectors; only images that look noisy are filtered.
 - **Preprocessing:** gray-world color correction and percentile contrast stretching.
-- **Background segmentation:** color-distance-based foreground extraction for queries containing background.
+- **Background segmentation:** color-distance-based foreground extraction for queries containing background; from Week 3, up to two paintings per query.
 - **Retrieval:** histogram comparison and ranked database matching.
 - **Evaluation:** retrieval mAP@1, mAP@5, mAP@10, and available segmentation metrics.
-- **Submission:** validated Python pickle rankings and native-resolution binary PNG masks.
+- **Submission:** validated Python pickle rankings (one list per painting from Week 3) and native-resolution binary PNG masks.
 
 The command-line interface runs inference and optional evaluation directly from source code. Development notebooks and cached experiment outputs are not required.
 
@@ -155,7 +163,7 @@ Method 1 provides the highest mean mAP@5 and the smaller descriptor. Method 2 pe
 
 **Requirements:** Python 3.10 or newer.
 
-Clone the repository and enter the Week 2 directory:
+Clone the repository and enter the directory of the week you want to run (Week 2 shown; use `"Week 3"` for Week 3):
 
 ```bash
 git clone https://github.com/MCV-2026-C1-Project/Team7.git
@@ -175,7 +183,7 @@ Install the project:
 python -m pip install -e .
 ```
 
-Inference and evaluation require NumPy and OpenCV. The project configuration declares the installation dependencies.
+In `Week 3` you can also use `python -m pip install -r requirements.txt`. Inference and evaluation require NumPy and OpenCV. The project configuration declares the installation dependencies.
 
 To inspect the available command-line options:
 
@@ -199,7 +207,11 @@ data/
 ├── qsd2_w2/    # Week 2 queries with background and binary masks
 ├── qst1_w1/    # Week 1 test queries
 ├── qst1_w2/    # Cropped Week 2 test queries
-└── qst2_w2/    # Week 2 test queries with background
+├── qst2_w2/    # Week 2 test queries with background
+├── qsd1_w3/    # Week 3 cropped development queries, augmentations and clean originals
+├── qsd2_w3/    # Week 3 queries with up to two paintings and binary masks
+├── qst1_w3/    # Week 3 cropped test queries
+└── qst2_w3/    # Week 3 test queries with background
 ```
 
 Development datasets include the required annotations, such as `gt_corresps.pkl`, and segmentation masks where applicable.
@@ -259,9 +271,37 @@ python main.py \
 
 These four commands recreate the Week 2 delivery artifacts. Each method retains the same descriptor and retrieval parameters across the relevant datasets; only the input background mode changes.
 
+## Run Week 3
+
+Week 3 has its own entry point with three commands. The default method is `colour_lbp_dct_wavelet`.
+
+```bash
+cd "Week 3"
+
+# Development evaluation (retrieval mAP@1/5/10; QSD2 sets also mask precision / recall / F1)
+python main.py evaluate --set qsd1_w3            # cropped queries, no background removal
+python main.py evaluate --set qsd2_w3            # background removal, up to two paintings
+python main.py evaluate --set qsd1_w2            # also qsd2_w2
+
+# Test delivery (QST1 and QST2) and its format check
+python main.py predict --out results/week3
+python main.py validate --delivery results/week3
+```
+
+```text
+results/week3/
+├── QST1/method1/result.pkl
+└── QST2/method1/
+    ├── result.pkl
+    ├── 00000.png
+    └── ...
+```
+
+Other presets (`--method`): `method1` / `method2` (Week 2), `texture_lbp` / `texture_dct` / `texture_wavelet` (texture alone), `colour_lbp_dct` and `colour_wavelet` (earlier fusions).
+
 ## Development evaluation
 
-Use `--evaluate` to evaluate on annotated development datasets.
+Use `--evaluate` to evaluate on annotated Week 1 and Week 2 development datasets (Week 3 uses `python main.py evaluate`, above).
 
 ```bash
 # Method 1: cropped development queries
@@ -342,11 +382,29 @@ Week 2/
     └── submission.py        # Validated PKL and PNG export
 ```
 
+```text
+Week 3/
+├── main.py                 # CLI: evaluate / predict / validate
+├── README.md
+├── requirements.txt
+├── pyproject.toml
+├── .gitignore
+└── src/
+    ├── config.py           # presets, noise thresholds, fusion scales, segmentation parameters
+    ├── denoise.py          # noise detection (impulse / grain) and filters
+    ├── colour.py           # colour histograms of Weeks 1 and 2
+    ├── texture.py          # LBP, DCT and wavelet descriptors
+    ├── descriptors.py      # crop + noise filter, then colour, texture or fused descriptor
+    ├── segmentation.py     # background removal, up to two paintings
+    ├── pipeline.py         # images -> masks -> descriptors -> rankings
+    └── data_loading.py, similarities.py, retrieval.py, evaluate.py, submission.py
+```
+
 The source code separates descriptor computation, segmentation, retrieval, evaluation, and submission generation. Supplementary assets are optional and are not loaded by the inference pipeline.
 
 ## Reproducibility and submission format
 
-The pipeline assumes one painting per query.
+In Weeks 1 and 2 the pipeline assumes one painting per query.
 
 **Retrieval output**
 
@@ -354,11 +412,17 @@ The pipeline assumes one painting per query.
 - One row per query in sorted filename order.
 - Exactly ten distinct database IDs per row, ranked from best to worst.
 
+**Week 3 retrieval output**
+
+- A Python `list[list[list[int]]]` with one extra list level so a query can hold more than one painting: queries in sorted filename order, then one list per painting from left to right, then exactly ten distinct database IDs.
+- QST1 has exactly one painting per query (`[[[ids]], ...]`); QST2 has one or two (`[[[ids], [ids]], ...]`).
+
 **Segmentation output**
 
 - QS2 masks are saved alongside `result.pkl`.
 - Each mask uses the original query filename stem with a `.png` extension.
 - Masks retain the input image dimensions and contain only `uint8` values `0` and `255`.
+- With two paintings, the mask of a query is the union of both.
 
 Predictions are validated before export. The saved pickle is reopened and checked. Empty or too-small masks count as evaluation failures and prevent an incomplete submission from being exported.
 
@@ -371,6 +435,8 @@ Inference writes only explicitly requested submission artifacts. It does not aut
 - **Consistent descriptors:** Query and reference images use the same descriptor configuration.
 - **Development-only selection:** The two delivery methods are selected using development results, not test accuracy.
 - **Validated exports:** Ranking format, uniqueness, and segmentation-mask constraints are checked before delivery.
+- **Filter only what is noisy (Week 3):** the noise detectors decide per image; clean images are never filtered.
+- **Equal-weight fusion (Week 3):** each descriptor is divided by its typical distance in the database, so no part dominates.
 - **Separated concerns:** The CLI delegates algorithms to modules under `src/`.
 
 ---
@@ -378,5 +444,5 @@ Inference writes only explicitly requested submission artifacts. It does not aut
 <p align="center">
   <strong>Team 7 · Museum Painting Retrieval</strong>
   <br>
-  <sub>MCV C1 — Weeks 1 and 2 · Color-based image retrieval</sub>
+  <sub>MCV C1 — Weeks 1 to 3 · Colour and texture image retrieval</sub>
 </p>
