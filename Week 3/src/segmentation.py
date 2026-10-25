@@ -155,11 +155,13 @@ def _refine_paintings(
                 others |= other["mask"] > 0
         best_mask = painting["mask"]
         best_iou = P["min_iou"]
+        occupied = (others | (union > 0)).astype(np.uint8)
+        occupied_margin = cv2.dilate(occupied, np.ones((3, 3), np.uint8)) > 0
         for polygon in candidates:
             candidate = np.zeros(distance.shape, np.uint8)
             cv2.fillPoly(candidate, [polygon], 255)
             foreground = candidate > 0
-            if np.any(foreground & (others | (union > 0))):
+            if np.any(foreground & occupied_margin):
                 continue
             # A contour may remove at most max_strong_loss of the confident painting pixels.
             if np.count_nonzero(strong & ~foreground) / max(1, strong_area) > P["max_strong_loss"]:
