@@ -7,7 +7,7 @@
 <p align="center">
   <strong>Content-Based Image Retrieval · Computer Vision · MCV C1</strong>
   <br>
-  Week 1 baseline and Week 2 submission
+  Week 1 baseline, Week 2 and Week 3 submissions
 </p>
 
 <p align="center">
@@ -26,6 +26,7 @@ The Week 2 submission provides two fixed retrieval methods, optional development
 
 ## Navigation
 
+- [Week 3](#week-3)
 - [Overview](#overview)
 - [Methods](#methods)
 - [Results](#development-results)
@@ -37,6 +38,20 @@ The Week 2 submission provides two fixed retrieval methods, optional development
 - [Project structure](#project-structure)
 - [Design decisions](#design-decisions)
 - [Reproducibility and submission format](#reproducibility-and-submission-format)
+
+## Week 3
+
+Week 3 lives in the [`Week 3/`](Week%203) folder, with its own README, entry point and sources. It adds noise
+detection and filtering, texture descriptors (LBP, DCT, wavelet), and retrieval for queries with up to two paintings.
+The final method fuses the Week 2 colour histograms with the three texture descriptors; on the development sets it
+reaches 30/30 (QSD1-W3) and 39/39 paintings (QSD2-W3, our masks), results the settings were chosen on and not an
+estimate of test accuracy.
+
+```bash
+cd "Week 3"
+python main.py evaluate --set qsd2_w3
+python main.py predict --out results/week3
+```
 
 ## Overview
 
