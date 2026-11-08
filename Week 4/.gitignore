@@ -1,0 +1,12 @@
+/data/
+.venv/
+__pycache__/
+*.pyc
+build/
+*.egg-info/
+._*
+uv.lock
+.cache/
+weeks/*/results/cross_week/
+weeks/*/results/dev_predictions/
+.ipynb_checkpoints/

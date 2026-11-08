@@ -1,0 +1,13 @@
+numpy==2.4.6
+opencv-contrib-python==4.13.0.92
+
+# Notebook environment and visualisation
+jupyterlab
+ipykernel
+nbconvert
+matplotlib>=3.7
+pandas
+scikit-image>=0.21
+
+# Tests
+pytest

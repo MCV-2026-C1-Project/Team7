@@ -1,0 +1,21 @@
+{
+  "config": {
+    "max_side": 900,
+    "max_points": 800,
+    "ratio": 0.75,
+    "reprojection_px": 3.0,
+    "resize_factor": 0.65,
+    "combined_weight": 0.5
+  },
+  "opencv": "4.11.0",
+  "numpy": "1.26.4",
+  "implementation_hash": "f9dc38791ef547c9d66c599500b4b63fea8a4507a3c5fe2aa888bb5774a068f8",
+  "query_count": 30,
+  "known_query_count": 20,
+  "known_reference_pairs": 29,
+  "elapsed_seconds": 87.20681546300057,
+  "orientation_adapter": "Single 36-bin dominant orientation for Harris and Harris-Laplace; DoG angles retained.",
+  "orb_scale": "All ORB descriptors use original-image scale and a fixed 31-pixel patch.",
+  "combination": "Paired blocks on common points, plus deduplicated union of independent correspondences.",
+  "scope": "Task 1 descriptor diagnostics; no retrieval, rejection or parameter optimization."
+}

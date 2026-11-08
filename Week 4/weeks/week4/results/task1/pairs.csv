@@ -1,0 +1,1030 @@
+query_id,reference_id,pair,detector,descriptor,source_points,matches,inliers,inlier_fraction
+1,150,reference,Harris,SIFT,370,30,7,0.23333333333333334
+1,150,reference,Harris,ORB,370,14,5,0.35714285714285715
+1,150,reference,Harris,BRISK,370,4,4,1.0
+1,150,reference,Harris,SIFT (common),370,30,7,0.23333333333333334
+1,150,reference,Harris,BRISK (common),370,4,4,1.0
+1,150,reference,Harris,SIFT + BRISK (paired),370,9,7,0.7777777777777778
+1,150,reference,Harris,SIFT + BRISK (union),370,34,7,0.20588235294117646
+1,150,reference,Harris-Laplace,SIFT,716,140,70,0.5
+1,150,reference,Harris-Laplace,ORB,714,20,6,0.3
+1,150,reference,Harris-Laplace,BRISK,690,92,35,0.3804347826086957
+1,150,reference,Harris-Laplace,SIFT (common),690,140,73,0.5214285714285715
+1,150,reference,Harris-Laplace,BRISK (common),690,92,35,0.3804347826086957
+1,150,reference,Harris-Laplace,SIFT + BRISK (paired),690,134,69,0.5149253731343284
+1,150,reference,Harris-Laplace,SIFT + BRISK (union),716,207,98,0.47342995169082125
+1,150,reference,DoG,SIFT,800,190,85,0.4473684210526316
+1,150,reference,DoG,ORB,800,36,6,0.16666666666666666
+1,150,reference,DoG,BRISK,800,61,24,0.39344262295081966
+1,150,reference,DoG,SIFT (common),800,190,85,0.4473684210526316
+1,150,reference,DoG,BRISK (common),800,61,24,0.39344262295081966
+1,150,reference,DoG,SIFT + BRISK (paired),800,126,65,0.5158730158730159
+1,150,reference,DoG,SIFT + BRISK (union),800,231,98,0.42424242424242425
+1,0,control,Harris,SIFT,370,0,0,0.0
+1,0,control,Harris,ORB,370,6,0,0.0
+1,0,control,Harris,BRISK,370,2,0,0.0
+1,0,control,Harris,SIFT (common),370,0,0,0.0
+1,0,control,Harris,BRISK (common),370,2,0,0.0
+1,0,control,Harris,SIFT + BRISK (paired),370,1,0,0.0
+1,0,control,Harris,SIFT + BRISK (union),370,2,0,0.0
+1,0,control,Harris-Laplace,SIFT,716,0,0,0.0
+1,0,control,Harris-Laplace,ORB,714,14,5,0.35714285714285715
+1,0,control,Harris-Laplace,BRISK,690,9,5,0.5555555555555556
+1,0,control,Harris-Laplace,SIFT (common),690,0,0,0.0
+1,0,control,Harris-Laplace,BRISK (common),690,9,5,0.5555555555555556
+1,0,control,Harris-Laplace,SIFT + BRISK (paired),690,1,0,0.0
+1,0,control,Harris-Laplace,SIFT + BRISK (union),716,9,5,0.5555555555555556
+1,0,control,DoG,SIFT,800,11,6,0.5454545454545454
+1,0,control,DoG,ORB,800,15,6,0.4
+1,0,control,DoG,BRISK,800,9,5,0.5555555555555556
+1,0,control,DoG,SIFT (common),800,9,4,0.4444444444444444
+1,0,control,DoG,BRISK (common),800,9,5,0.5555555555555556
+1,0,control,DoG,SIFT + BRISK (paired),800,3,0,0.0
+1,0,control,DoG,SIFT + BRISK (union),800,20,7,0.35
+2,48,reference,Harris,SIFT,264,4,4,1.0
+2,48,reference,Harris,ORB,256,2,0,0.0
+2,48,reference,Harris,BRISK,263,3,0,0.0
+2,48,reference,Harris,SIFT (common),263,4,4,1.0
+2,48,reference,Harris,BRISK (common),263,3,0,0.0
+2,48,reference,Harris,SIFT + BRISK (paired),263,0,0,0.0
+2,48,reference,Harris,SIFT + BRISK (union),264,7,4,0.5714285714285714
+2,48,reference,Harris-Laplace,SIFT,284,87,56,0.6436781609195402
+2,48,reference,Harris-Laplace,ORB,274,6,4,0.6666666666666666
+2,48,reference,Harris-Laplace,BRISK,257,71,50,0.704225352112676
+2,48,reference,Harris-Laplace,SIFT (common),257,87,56,0.6436781609195402
+2,48,reference,Harris-Laplace,BRISK (common),257,71,50,0.704225352112676
+2,48,reference,Harris-Laplace,SIFT + BRISK (paired),257,81,51,0.6296296296296297
+2,48,reference,Harris-Laplace,SIFT + BRISK (union),284,111,79,0.7117117117117117
+2,48,reference,DoG,SIFT,800,182,162,0.8901098901098901
+2,48,reference,DoG,ORB,782,19,6,0.3157894736842105
+2,48,reference,DoG,BRISK,794,23,18,0.782608695652174
+2,48,reference,DoG,SIFT (common),794,182,162,0.8901098901098901
+2,48,reference,DoG,BRISK (common),794,23,18,0.782608695652174
+2,48,reference,DoG,SIFT + BRISK (paired),794,103,97,0.941747572815534
+2,48,reference,DoG,SIFT + BRISK (union),800,189,165,0.873015873015873
+2,251,reference,Harris,SIFT,264,5,0,0.0
+2,251,reference,Harris,ORB,256,9,4,0.4444444444444444
+2,251,reference,Harris,BRISK,263,6,4,0.6666666666666666
+2,251,reference,Harris,SIFT (common),263,5,0,0.0
+2,251,reference,Harris,BRISK (common),263,6,4,0.6666666666666666
+2,251,reference,Harris,SIFT + BRISK (paired),263,5,0,0.0
+2,251,reference,Harris,SIFT + BRISK (union),264,11,4,0.36363636363636365
+2,251,reference,Harris-Laplace,SIFT,284,26,20,0.7692307692307693
+2,251,reference,Harris-Laplace,ORB,274,8,5,0.625
+2,251,reference,Harris-Laplace,BRISK,257,24,15,0.625
+2,251,reference,Harris-Laplace,SIFT (common),257,25,18,0.72
+2,251,reference,Harris-Laplace,BRISK (common),257,24,15,0.625
+2,251,reference,Harris-Laplace,SIFT + BRISK (paired),257,30,24,0.8
+2,251,reference,Harris-Laplace,SIFT + BRISK (union),284,40,22,0.55
+2,251,reference,DoG,SIFT,800,78,49,0.6282051282051282
+2,251,reference,DoG,ORB,782,16,5,0.3125
+2,251,reference,DoG,BRISK,794,26,15,0.5769230769230769
+2,251,reference,DoG,SIFT (common),794,77,47,0.6103896103896104
+2,251,reference,DoG,BRISK (common),794,26,15,0.5769230769230769
+2,251,reference,DoG,SIFT + BRISK (paired),794,58,40,0.6896551724137931
+2,251,reference,DoG,SIFT + BRISK (union),800,94,54,0.574468085106383
+2,0,control,Harris,SIFT,264,3,0,0.0
+2,0,control,Harris,ORB,256,4,4,1.0
+2,0,control,Harris,BRISK,263,2,0,0.0
+2,0,control,Harris,SIFT (common),263,4,4,1.0
+2,0,control,Harris,BRISK (common),263,2,0,0.0
+2,0,control,Harris,SIFT + BRISK (paired),263,0,0,0.0
+2,0,control,Harris,SIFT + BRISK (union),264,5,4,0.8
+2,0,control,Harris-Laplace,SIFT,284,1,0,0.0
+2,0,control,Harris-Laplace,ORB,274,5,0,0.0
+2,0,control,Harris-Laplace,BRISK,257,2,0,0.0
+2,0,control,Harris-Laplace,SIFT (common),257,1,0,0.0
+2,0,control,Harris-Laplace,BRISK (common),257,2,0,0.0
+2,0,control,Harris-Laplace,SIFT + BRISK (paired),257,0,0,0.0
+2,0,control,Harris-Laplace,SIFT + BRISK (union),284,3,0,0.0
+2,0,control,DoG,SIFT,800,11,4,0.36363636363636365
+2,0,control,DoG,ORB,782,6,4,0.6666666666666666
+2,0,control,DoG,BRISK,794,7,5,0.7142857142857143
+2,0,control,DoG,SIFT (common),794,11,4,0.36363636363636365
+2,0,control,DoG,BRISK (common),794,7,5,0.7142857142857143
+2,0,control,DoG,SIFT + BRISK (paired),794,1,0,0.0
+2,0,control,DoG,SIFT + BRISK (union),800,18,6,0.3333333333333333
+3,32,reference,Harris,SIFT,800,49,19,0.3877551020408163
+3,32,reference,Harris,ORB,659,7,4,0.5714285714285714
+3,32,reference,Harris,BRISK,750,4,4,1.0
+3,32,reference,Harris,SIFT (common),750,44,23,0.5227272727272727
+3,32,reference,Harris,BRISK (common),750,4,4,1.0
+3,32,reference,Harris,SIFT + BRISK (paired),750,4,4,1.0
+3,32,reference,Harris,SIFT + BRISK (union),800,53,16,0.3018867924528302
+3,32,reference,Harris-Laplace,SIFT,115,12,5,0.4166666666666667
+3,32,reference,Harris-Laplace,ORB,99,2,0,0.0
+3,32,reference,Harris-Laplace,BRISK,107,17,13,0.7647058823529411
+3,32,reference,Harris-Laplace,SIFT (common),107,13,5,0.38461538461538464
+3,32,reference,Harris-Laplace,BRISK (common),107,17,13,0.7647058823529411
+3,32,reference,Harris-Laplace,SIFT + BRISK (paired),107,12,6,0.5
+3,32,reference,Harris-Laplace,SIFT + BRISK (union),115,26,13,0.5
+3,32,reference,DoG,SIFT,600,80,34,0.425
+3,32,reference,DoG,ORB,428,5,4,0.8
+3,32,reference,DoG,BRISK,581,8,5,0.625
+3,32,reference,DoG,SIFT (common),581,50,30,0.6
+3,32,reference,DoG,BRISK (common),581,8,5,0.625
+3,32,reference,DoG,SIFT + BRISK (paired),581,34,27,0.7941176470588235
+3,32,reference,DoG,SIFT + BRISK (union),600,83,31,0.37349397590361444
+3,0,control,Harris,SIFT,800,9,0,0.0
+3,0,control,Harris,ORB,659,6,0,0.0
+3,0,control,Harris,BRISK,750,3,0,0.0
+3,0,control,Harris,SIFT (common),750,9,0,0.0
+3,0,control,Harris,BRISK (common),750,3,0,0.0
+3,0,control,Harris,SIFT + BRISK (paired),750,1,0,0.0
+3,0,control,Harris,SIFT + BRISK (union),800,12,4,0.3333333333333333
+3,0,control,Harris-Laplace,SIFT,115,1,0,0.0
+3,0,control,Harris-Laplace,ORB,99,2,0,0.0
+3,0,control,Harris-Laplace,BRISK,107,1,0,0.0
+3,0,control,Harris-Laplace,SIFT (common),107,1,0,0.0
+3,0,control,Harris-Laplace,BRISK (common),107,1,0,0.0
+3,0,control,Harris-Laplace,SIFT + BRISK (paired),107,0,0,0.0
+3,0,control,Harris-Laplace,SIFT + BRISK (union),115,2,0,0.0
+3,0,control,DoG,SIFT,600,2,0,0.0
+3,0,control,DoG,ORB,428,4,4,1.0
+3,0,control,DoG,BRISK,581,0,0,0.0
+3,0,control,DoG,SIFT (common),581,3,0,0.0
+3,0,control,DoG,BRISK (common),581,0,0,0.0
+3,0,control,DoG,SIFT + BRISK (paired),581,0,0,0.0
+3,0,control,DoG,SIFT + BRISK (union),600,2,0,0.0
+4,161,reference,Harris,SIFT,800,593,503,0.8482293423271501
+4,161,reference,Harris,ORB,777,547,519,0.9488117001828154
+4,161,reference,Harris,BRISK,794,505,448,0.8871287128712871
+4,161,reference,Harris,SIFT (common),794,591,534,0.9035532994923858
+4,161,reference,Harris,BRISK (common),794,505,448,0.8871287128712871
+4,161,reference,Harris,SIFT + BRISK (paired),794,571,515,0.9019264448336253
+4,161,reference,Harris,SIFT + BRISK (union),800,631,483,0.7654516640253566
+4,161,reference,Harris-Laplace,SIFT,800,491,372,0.7576374745417516
+4,161,reference,Harris-Laplace,ORB,765,421,371,0.8812351543942993
+4,161,reference,Harris-Laplace,BRISK,769,408,357,0.875
+4,161,reference,Harris-Laplace,SIFT (common),769,480,412,0.8583333333333333
+4,161,reference,Harris-Laplace,BRISK (common),769,408,357,0.875
+4,161,reference,Harris-Laplace,SIFT + BRISK (paired),769,480,432,0.9
+4,161,reference,Harris-Laplace,SIFT + BRISK (union),800,575,524,0.9113043478260869
+4,161,reference,DoG,SIFT,800,504,450,0.8928571428571429
+4,161,reference,DoG,ORB,732,463,456,0.9848812095032398
+4,161,reference,DoG,BRISK,794,336,323,0.9613095238095238
+4,161,reference,DoG,SIFT (common),794,505,457,0.904950495049505
+4,161,reference,DoG,BRISK (common),794,336,323,0.9613095238095238
+4,161,reference,DoG,SIFT + BRISK (paired),794,497,457,0.9195171026156942
+4,161,reference,DoG,SIFT + BRISK (union),800,555,482,0.8684684684684685
+4,0,control,Harris,SIFT,800,3,0,0.0
+4,0,control,Harris,ORB,777,9,4,0.4444444444444444
+4,0,control,Harris,BRISK,794,4,4,1.0
+4,0,control,Harris,SIFT (common),794,3,0,0.0
+4,0,control,Harris,BRISK (common),794,4,4,1.0
+4,0,control,Harris,SIFT + BRISK (paired),794,1,0,0.0
+4,0,control,Harris,SIFT + BRISK (union),800,7,4,0.5714285714285714
+4,0,control,Harris-Laplace,SIFT,800,3,0,0.0
+4,0,control,Harris-Laplace,ORB,765,3,0,0.0
+4,0,control,Harris-Laplace,BRISK,769,2,0,0.0
+4,0,control,Harris-Laplace,SIFT (common),769,3,0,0.0
+4,0,control,Harris-Laplace,BRISK (common),769,2,0,0.0
+4,0,control,Harris-Laplace,SIFT + BRISK (paired),769,0,0,0.0
+4,0,control,Harris-Laplace,SIFT + BRISK (union),800,5,0,0.0
+4,0,control,DoG,SIFT,800,5,0,0.0
+4,0,control,DoG,ORB,732,3,0,0.0
+4,0,control,DoG,BRISK,794,6,4,0.6666666666666666
+4,0,control,DoG,SIFT (common),794,4,4,1.0
+4,0,control,DoG,BRISK (common),794,6,4,0.6666666666666666
+4,0,control,DoG,SIFT + BRISK (paired),794,2,0,0.0
+4,0,control,DoG,SIFT + BRISK (union),800,11,4,0.36363636363636365
+5,81,reference,Harris,SIFT,800,488,450,0.9221311475409836
+5,81,reference,Harris,ORB,794,445,387,0.8696629213483146
+5,81,reference,Harris,BRISK,797,384,382,0.9947916666666666
+5,81,reference,Harris,SIFT (common),797,488,450,0.9221311475409836
+5,81,reference,Harris,BRISK (common),797,384,382,0.9947916666666666
+5,81,reference,Harris,SIFT + BRISK (paired),797,467,453,0.9700214132762313
+5,81,reference,Harris,SIFT + BRISK (union),800,517,450,0.8704061895551257
+5,81,reference,Harris-Laplace,SIFT,800,433,382,0.8822170900692841
+5,81,reference,Harris-Laplace,ORB,791,352,324,0.9204545454545454
+5,81,reference,Harris-Laplace,BRISK,760,367,346,0.9427792915531336
+5,81,reference,Harris-Laplace,SIFT (common),760,424,371,0.875
+5,81,reference,Harris-Laplace,BRISK (common),760,367,346,0.9427792915531336
+5,81,reference,Harris-Laplace,SIFT + BRISK (paired),760,426,311,0.7300469483568075
+5,81,reference,Harris-Laplace,SIFT + BRISK (union),800,490,373,0.7612244897959184
+5,81,reference,DoG,SIFT,800,423,380,0.8983451536643026
+5,81,reference,DoG,ORB,789,414,403,0.9734299516908212
+5,81,reference,DoG,BRISK,793,338,307,0.908284023668639
+5,81,reference,DoG,SIFT (common),793,420,391,0.930952380952381
+5,81,reference,DoG,BRISK (common),793,338,307,0.908284023668639
+5,81,reference,DoG,SIFT + BRISK (paired),793,425,401,0.9435294117647058
+5,81,reference,DoG,SIFT + BRISK (union),800,473,448,0.9471458773784355
+5,0,control,Harris,SIFT,800,1,0,0.0
+5,0,control,Harris,ORB,794,14,5,0.35714285714285715
+5,0,control,Harris,BRISK,797,5,4,0.8
+5,0,control,Harris,SIFT (common),797,2,0,0.0
+5,0,control,Harris,BRISK (common),797,5,4,0.8
+5,0,control,Harris,SIFT + BRISK (paired),797,1,0,0.0
+5,0,control,Harris,SIFT + BRISK (union),800,6,4,0.6666666666666666
+5,0,control,Harris-Laplace,SIFT,800,4,4,1.0
+5,0,control,Harris-Laplace,ORB,791,6,0,0.0
+5,0,control,Harris-Laplace,BRISK,760,2,0,0.0
+5,0,control,Harris-Laplace,SIFT (common),760,4,4,1.0
+5,0,control,Harris-Laplace,BRISK (common),760,2,0,0.0
+5,0,control,Harris-Laplace,SIFT + BRISK (paired),760,2,0,0.0
+5,0,control,Harris-Laplace,SIFT + BRISK (union),800,6,5,0.8333333333333334
+5,0,control,DoG,SIFT,800,6,0,0.0
+5,0,control,DoG,ORB,789,6,4,0.6666666666666666
+5,0,control,DoG,BRISK,793,8,6,0.75
+5,0,control,DoG,SIFT (common),793,6,0,0.0
+5,0,control,DoG,BRISK (common),793,8,6,0.75
+5,0,control,DoG,SIFT + BRISK (paired),793,1,0,0.0
+5,0,control,DoG,SIFT + BRISK (union),800,14,6,0.42857142857142855
+6,62,reference,Harris,SIFT,522,3,0,0.0
+6,62,reference,Harris,ORB,518,8,4,0.5
+6,62,reference,Harris,BRISK,521,1,0,0.0
+6,62,reference,Harris,SIFT (common),521,3,0,0.0
+6,62,reference,Harris,BRISK (common),521,1,0,0.0
+6,62,reference,Harris,SIFT + BRISK (paired),521,0,0,0.0
+6,62,reference,Harris,SIFT + BRISK (union),522,4,4,1.0
+6,62,reference,Harris-Laplace,SIFT,530,123,72,0.5853658536585366
+6,62,reference,Harris-Laplace,ORB,522,7,0,0.0
+6,62,reference,Harris-Laplace,BRISK,496,110,65,0.5909090909090909
+6,62,reference,Harris-Laplace,SIFT (common),496,125,76,0.608
+6,62,reference,Harris-Laplace,BRISK (common),496,110,65,0.5909090909090909
+6,62,reference,Harris-Laplace,SIFT + BRISK (paired),496,137,68,0.49635036496350365
+6,62,reference,Harris-Laplace,SIFT + BRISK (union),530,161,79,0.4906832298136646
+6,62,reference,DoG,SIFT,800,176,157,0.8920454545454546
+6,62,reference,DoG,ORB,790,6,4,0.6666666666666666
+6,62,reference,DoG,BRISK,796,31,24,0.7741935483870968
+6,62,reference,DoG,SIFT (common),796,175,160,0.9142857142857143
+6,62,reference,DoG,BRISK (common),796,31,24,0.7741935483870968
+6,62,reference,DoG,SIFT + BRISK (paired),796,108,100,0.9259259259259259
+6,62,reference,DoG,SIFT + BRISK (union),800,185,166,0.8972972972972973
+6,38,reference,Harris,SIFT,522,11,5,0.45454545454545453
+6,38,reference,Harris,ORB,518,11,5,0.45454545454545453
+6,38,reference,Harris,BRISK,521,7,4,0.5714285714285714
+6,38,reference,Harris,SIFT (common),521,10,5,0.5
+6,38,reference,Harris,BRISK (common),521,7,4,0.5714285714285714
+6,38,reference,Harris,SIFT + BRISK (paired),521,7,4,0.5714285714285714
+6,38,reference,Harris,SIFT + BRISK (union),522,18,5,0.2777777777777778
+6,38,reference,Harris-Laplace,SIFT,530,16,10,0.625
+6,38,reference,Harris-Laplace,ORB,522,14,5,0.35714285714285715
+6,38,reference,Harris-Laplace,BRISK,496,22,9,0.4090909090909091
+6,38,reference,Harris-Laplace,SIFT (common),496,16,10,0.625
+6,38,reference,Harris-Laplace,BRISK (common),496,22,9,0.4090909090909091
+6,38,reference,Harris-Laplace,SIFT + BRISK (paired),496,14,10,0.7142857142857143
+6,38,reference,Harris-Laplace,SIFT + BRISK (union),530,32,15,0.46875
+6,38,reference,DoG,SIFT,800,36,20,0.5555555555555556
+6,38,reference,DoG,ORB,790,8,4,0.5
+6,38,reference,DoG,BRISK,796,10,6,0.6
+6,38,reference,DoG,SIFT (common),796,34,19,0.5588235294117647
+6,38,reference,DoG,BRISK (common),796,10,6,0.6
+6,38,reference,DoG,SIFT + BRISK (paired),796,19,12,0.631578947368421
+6,38,reference,DoG,SIFT + BRISK (union),800,45,20,0.4444444444444444
+6,0,control,Harris,SIFT,522,4,4,1.0
+6,0,control,Harris,ORB,518,10,4,0.4
+6,0,control,Harris,BRISK,521,3,0,0.0
+6,0,control,Harris,SIFT (common),521,4,4,1.0
+6,0,control,Harris,BRISK (common),521,3,0,0.0
+6,0,control,Harris,SIFT + BRISK (paired),521,1,0,0.0
+6,0,control,Harris,SIFT + BRISK (union),522,7,4,0.5714285714285714
+6,0,control,Harris-Laplace,SIFT,530,3,0,0.0
+6,0,control,Harris-Laplace,ORB,522,9,4,0.4444444444444444
+6,0,control,Harris-Laplace,BRISK,496,1,0,0.0
+6,0,control,Harris-Laplace,SIFT (common),496,4,4,1.0
+6,0,control,Harris-Laplace,BRISK (common),496,1,0,0.0
+6,0,control,Harris-Laplace,SIFT + BRISK (paired),496,0,0,0.0
+6,0,control,Harris-Laplace,SIFT + BRISK (union),530,4,4,1.0
+6,0,control,DoG,SIFT,800,8,4,0.5
+6,0,control,DoG,ORB,790,11,4,0.36363636363636365
+6,0,control,DoG,BRISK,796,9,8,0.8888888888888888
+6,0,control,DoG,SIFT (common),796,6,4,0.6666666666666666
+6,0,control,DoG,BRISK (common),796,9,8,0.8888888888888888
+6,0,control,DoG,SIFT + BRISK (paired),796,2,0,0.0
+6,0,control,DoG,SIFT + BRISK (union),800,17,9,0.5294117647058824
+8,128,reference,Harris,SIFT,800,34,5,0.14705882352941177
+8,128,reference,Harris,ORB,746,5,4,0.8
+8,128,reference,Harris,BRISK,794,4,4,1.0
+8,128,reference,Harris,SIFT (common),794,10,4,0.4
+8,128,reference,Harris,BRISK (common),794,4,4,1.0
+8,128,reference,Harris,SIFT + BRISK (paired),794,0,0,0.0
+8,128,reference,Harris,SIFT + BRISK (union),800,38,11,0.2894736842105263
+8,128,reference,Harris-Laplace,SIFT,69,14,6,0.42857142857142855
+8,128,reference,Harris-Laplace,ORB,63,1,0,0.0
+8,128,reference,Harris-Laplace,BRISK,58,0,0,0.0
+8,128,reference,Harris-Laplace,SIFT (common),58,3,0,0.0
+8,128,reference,Harris-Laplace,BRISK (common),58,0,0,0.0
+8,128,reference,Harris-Laplace,SIFT + BRISK (paired),58,2,0,0.0
+8,128,reference,Harris-Laplace,SIFT + BRISK (union),69,14,6,0.42857142857142855
+8,128,reference,DoG,SIFT,491,37,17,0.4594594594594595
+8,128,reference,DoG,ORB,424,3,0,0.0
+8,128,reference,DoG,BRISK,484,6,0,0.0
+8,128,reference,DoG,SIFT (common),484,40,16,0.4
+8,128,reference,DoG,BRISK (common),484,6,0,0.0
+8,128,reference,DoG,SIFT + BRISK (paired),484,9,5,0.5555555555555556
+8,128,reference,DoG,SIFT + BRISK (union),491,43,16,0.37209302325581395
+8,0,control,Harris,SIFT,800,38,13,0.34210526315789475
+8,0,control,Harris,ORB,746,6,4,0.6666666666666666
+8,0,control,Harris,BRISK,794,1,0,0.0
+8,0,control,Harris,SIFT (common),794,38,13,0.34210526315789475
+8,0,control,Harris,BRISK (common),794,1,0,0.0
+8,0,control,Harris,SIFT + BRISK (paired),794,5,0,0.0
+8,0,control,Harris,SIFT + BRISK (union),800,39,12,0.3076923076923077
+8,0,control,Harris-Laplace,SIFT,69,1,0,0.0
+8,0,control,Harris-Laplace,ORB,63,2,0,0.0
+8,0,control,Harris-Laplace,BRISK,58,0,0,0.0
+8,0,control,Harris-Laplace,SIFT (common),58,0,0,0.0
+8,0,control,Harris-Laplace,BRISK (common),58,0,0,0.0
+8,0,control,Harris-Laplace,SIFT + BRISK (paired),58,0,0,0.0
+8,0,control,Harris-Laplace,SIFT + BRISK (union),69,1,0,0.0
+8,0,control,DoG,SIFT,491,9,0,0.0
+8,0,control,DoG,ORB,424,3,0,0.0
+8,0,control,DoG,BRISK,484,2,0,0.0
+8,0,control,DoG,SIFT (common),484,5,0,0.0
+8,0,control,DoG,BRISK (common),484,2,0,0.0
+8,0,control,DoG,SIFT + BRISK (paired),484,1,0,0.0
+8,0,control,DoG,SIFT + BRISK (union),491,11,4,0.36363636363636365
+9,155,reference,Harris,SIFT,655,5,0,0.0
+9,155,reference,Harris,ORB,653,6,4,0.6666666666666666
+9,155,reference,Harris,BRISK,653,1,0,0.0
+9,155,reference,Harris,SIFT (common),653,5,0,0.0
+9,155,reference,Harris,BRISK (common),653,1,0,0.0
+9,155,reference,Harris,SIFT + BRISK (paired),653,1,0,0.0
+9,155,reference,Harris,SIFT + BRISK (union),655,6,0,0.0
+9,155,reference,Harris-Laplace,SIFT,754,180,126,0.7
+9,155,reference,Harris-Laplace,ORB,750,6,4,0.6666666666666666
+9,155,reference,Harris-Laplace,BRISK,724,147,115,0.782312925170068
+9,155,reference,Harris-Laplace,SIFT (common),724,180,126,0.7
+9,155,reference,Harris-Laplace,BRISK (common),724,147,115,0.782312925170068
+9,155,reference,Harris-Laplace,SIFT + BRISK (paired),724,180,144,0.8
+9,155,reference,Harris-Laplace,SIFT + BRISK (union),754,239,173,0.7238493723849372
+9,155,reference,DoG,SIFT,800,224,209,0.9330357142857143
+9,155,reference,DoG,ORB,794,8,4,0.5
+9,155,reference,DoG,BRISK,789,14,11,0.7857142857142857
+9,155,reference,DoG,SIFT (common),789,224,209,0.9330357142857143
+9,155,reference,DoG,BRISK (common),789,14,11,0.7857142857142857
+9,155,reference,DoG,SIFT + BRISK (paired),789,153,140,0.9150326797385621
+9,155,reference,DoG,SIFT + BRISK (union),800,230,210,0.9130434782608695
+9,258,reference,Harris,SIFT,655,9,5,0.5555555555555556
+9,258,reference,Harris,ORB,653,5,0,0.0
+9,258,reference,Harris,BRISK,653,1,0,0.0
+9,258,reference,Harris,SIFT (common),653,7,4,0.5714285714285714
+9,258,reference,Harris,BRISK (common),653,1,0,0.0
+9,258,reference,Harris,SIFT + BRISK (paired),653,2,0,0.0
+9,258,reference,Harris,SIFT + BRISK (union),655,10,5,0.5
+9,258,reference,Harris-Laplace,SIFT,754,39,19,0.48717948717948717
+9,258,reference,Harris-Laplace,ORB,750,6,4,0.6666666666666666
+9,258,reference,Harris-Laplace,BRISK,724,14,8,0.5714285714285714
+9,258,reference,Harris-Laplace,SIFT (common),724,36,15,0.4166666666666667
+9,258,reference,Harris-Laplace,BRISK (common),724,14,8,0.5714285714285714
+9,258,reference,Harris-Laplace,SIFT + BRISK (paired),724,30,16,0.5333333333333333
+9,258,reference,Harris-Laplace,SIFT + BRISK (union),754,46,20,0.43478260869565216
+9,258,reference,DoG,SIFT,800,115,83,0.7217391304347827
+9,258,reference,DoG,ORB,794,21,7,0.3333333333333333
+9,258,reference,DoG,BRISK,789,5,5,1.0
+9,258,reference,DoG,SIFT (common),789,105,67,0.638095238095238
+9,258,reference,DoG,BRISK (common),789,5,5,1.0
+9,258,reference,DoG,SIFT + BRISK (paired),789,64,45,0.703125
+9,258,reference,DoG,SIFT + BRISK (union),800,118,71,0.6016949152542372
+9,0,control,Harris,SIFT,655,1,0,0.0
+9,0,control,Harris,ORB,653,6,4,0.6666666666666666
+9,0,control,Harris,BRISK,653,5,4,0.8
+9,0,control,Harris,SIFT (common),653,1,0,0.0
+9,0,control,Harris,BRISK (common),653,5,4,0.8
+9,0,control,Harris,SIFT + BRISK (paired),653,0,0,0.0
+9,0,control,Harris,SIFT + BRISK (union),655,6,4,0.6666666666666666
+9,0,control,Harris-Laplace,SIFT,754,1,0,0.0
+9,0,control,Harris-Laplace,ORB,750,15,5,0.3333333333333333
+9,0,control,Harris-Laplace,BRISK,724,6,4,0.6666666666666666
+9,0,control,Harris-Laplace,SIFT (common),724,0,0,0.0
+9,0,control,Harris-Laplace,BRISK (common),724,6,4,0.6666666666666666
+9,0,control,Harris-Laplace,SIFT + BRISK (paired),724,1,0,0.0
+9,0,control,Harris-Laplace,SIFT + BRISK (union),754,7,4,0.5714285714285714
+9,0,control,DoG,SIFT,800,9,4,0.4444444444444444
+9,0,control,DoG,ORB,794,11,5,0.45454545454545453
+9,0,control,DoG,BRISK,789,1,0,0.0
+9,0,control,DoG,SIFT (common),789,6,4,0.6666666666666666
+9,0,control,DoG,BRISK (common),789,1,0,0.0
+9,0,control,DoG,SIFT + BRISK (paired),789,1,0,0.0
+9,0,control,DoG,SIFT + BRISK (union),800,10,5,0.5
+10,136,reference,Harris,SIFT,598,5,4,0.8
+10,136,reference,Harris,ORB,592,15,4,0.26666666666666666
+10,136,reference,Harris,BRISK,598,5,0,0.0
+10,136,reference,Harris,SIFT (common),598,5,4,0.8
+10,136,reference,Harris,BRISK (common),598,5,0,0.0
+10,136,reference,Harris,SIFT + BRISK (paired),598,2,0,0.0
+10,136,reference,Harris,SIFT + BRISK (union),598,10,4,0.4
+10,136,reference,Harris-Laplace,SIFT,742,23,14,0.6086956521739131
+10,136,reference,Harris-Laplace,ORB,730,9,6,0.6666666666666666
+10,136,reference,Harris-Laplace,BRISK,694,39,16,0.41025641025641024
+10,136,reference,Harris-Laplace,SIFT (common),694,22,15,0.6818181818181818
+10,136,reference,Harris-Laplace,BRISK (common),694,39,16,0.41025641025641024
+10,136,reference,Harris-Laplace,SIFT + BRISK (paired),694,29,18,0.6206896551724138
+10,136,reference,Harris-Laplace,SIFT + BRISK (union),742,48,19,0.3958333333333333
+10,136,reference,DoG,SIFT,800,54,26,0.48148148148148145
+10,136,reference,DoG,ORB,795,14,5,0.35714285714285715
+10,136,reference,DoG,BRISK,792,10,5,0.5
+10,136,reference,DoG,SIFT (common),792,55,26,0.4727272727272727
+10,136,reference,DoG,BRISK (common),792,10,5,0.5
+10,136,reference,DoG,SIFT + BRISK (paired),792,26,20,0.7692307692307693
+10,136,reference,DoG,SIFT + BRISK (union),800,60,26,0.43333333333333335
+10,76,reference,Harris,SIFT,598,1,0,0.0
+10,76,reference,Harris,ORB,592,6,4,0.6666666666666666
+10,76,reference,Harris,BRISK,598,7,4,0.5714285714285714
+10,76,reference,Harris,SIFT (common),598,1,0,0.0
+10,76,reference,Harris,BRISK (common),598,7,4,0.5714285714285714
+10,76,reference,Harris,SIFT + BRISK (paired),598,3,0,0.0
+10,76,reference,Harris,SIFT + BRISK (union),598,8,4,0.5
+10,76,reference,Harris-Laplace,SIFT,742,190,98,0.5157894736842106
+10,76,reference,Harris-Laplace,ORB,730,11,5,0.45454545454545453
+10,76,reference,Harris-Laplace,BRISK,694,135,100,0.7407407407407407
+10,76,reference,Harris-Laplace,SIFT (common),694,187,121,0.6470588235294118
+10,76,reference,Harris-Laplace,BRISK (common),694,135,100,0.7407407407407407
+10,76,reference,Harris-Laplace,SIFT + BRISK (paired),694,181,138,0.7624309392265194
+10,76,reference,Harris-Laplace,SIFT + BRISK (union),742,244,185,0.7581967213114754
+10,76,reference,DoG,SIFT,800,291,275,0.9450171821305842
+10,76,reference,DoG,ORB,795,6,4,0.6666666666666666
+10,76,reference,DoG,BRISK,792,24,14,0.5833333333333334
+10,76,reference,DoG,SIFT (common),792,290,257,0.8862068965517241
+10,76,reference,DoG,BRISK (common),792,24,14,0.5833333333333334
+10,76,reference,DoG,SIFT + BRISK (paired),792,150,142,0.9466666666666667
+10,76,reference,DoG,SIFT + BRISK (union),800,303,251,0.8283828382838284
+10,0,control,Harris,SIFT,598,2,0,0.0
+10,0,control,Harris,ORB,592,4,4,1.0
+10,0,control,Harris,BRISK,598,4,4,1.0
+10,0,control,Harris,SIFT (common),598,2,0,0.0
+10,0,control,Harris,BRISK (common),598,4,4,1.0
+10,0,control,Harris,SIFT + BRISK (paired),598,2,0,0.0
+10,0,control,Harris,SIFT + BRISK (union),598,6,4,0.6666666666666666
+10,0,control,Harris-Laplace,SIFT,742,5,5,1.0
+10,0,control,Harris-Laplace,ORB,730,10,4,0.4
+10,0,control,Harris-Laplace,BRISK,694,5,4,0.8
+10,0,control,Harris-Laplace,SIFT (common),694,4,4,1.0
+10,0,control,Harris-Laplace,BRISK (common),694,5,4,0.8
+10,0,control,Harris-Laplace,SIFT + BRISK (paired),694,0,0,0.0
+10,0,control,Harris-Laplace,SIFT + BRISK (union),742,10,5,0.5
+10,0,control,DoG,SIFT,800,11,5,0.45454545454545453
+10,0,control,DoG,ORB,795,2,0,0.0
+10,0,control,DoG,BRISK,792,9,6,0.6666666666666666
+10,0,control,DoG,SIFT (common),792,11,5,0.45454545454545453
+10,0,control,DoG,BRISK (common),792,9,6,0.6666666666666666
+10,0,control,DoG,SIFT + BRISK (paired),792,4,4,1.0
+10,0,control,DoG,SIFT + BRISK (union),800,20,7,0.35
+13,53,reference,Harris,SIFT,52,23,14,0.6086956521739131
+13,53,reference,Harris,ORB,50,13,9,0.6923076923076923
+13,53,reference,Harris,BRISK,52,7,7,1.0
+13,53,reference,Harris,SIFT (common),52,21,13,0.6190476190476191
+13,53,reference,Harris,BRISK (common),52,7,7,1.0
+13,53,reference,Harris,SIFT + BRISK (paired),52,15,12,0.8
+13,53,reference,Harris,SIFT + BRISK (union),52,27,19,0.7037037037037037
+13,53,reference,Harris-Laplace,SIFT,76,13,10,0.7692307692307693
+13,53,reference,Harris-Laplace,ORB,69,10,6,0.6
+13,53,reference,Harris-Laplace,BRISK,54,16,10,0.625
+13,53,reference,Harris-Laplace,SIFT (common),54,11,9,0.8181818181818182
+13,53,reference,Harris-Laplace,BRISK (common),54,16,10,0.625
+13,53,reference,Harris-Laplace,SIFT + BRISK (paired),54,13,10,0.7692307692307693
+13,53,reference,Harris-Laplace,SIFT + BRISK (union),76,22,16,0.7272727272727273
+13,53,reference,DoG,SIFT,247,54,46,0.8518518518518519
+13,53,reference,DoG,ORB,230,28,17,0.6071428571428571
+13,53,reference,DoG,BRISK,240,31,30,0.967741935483871
+13,53,reference,DoG,SIFT (common),240,56,44,0.7857142857142857
+13,53,reference,DoG,BRISK (common),240,31,30,0.967741935483871
+13,53,reference,DoG,SIFT + BRISK (paired),240,46,42,0.9130434782608695
+13,53,reference,DoG,SIFT + BRISK (union),247,61,53,0.8688524590163934
+13,0,control,Harris,SIFT,52,1,0,0.0
+13,0,control,Harris,ORB,50,0,0,0.0
+13,0,control,Harris,BRISK,52,0,0,0.0
+13,0,control,Harris,SIFT (common),52,1,0,0.0
+13,0,control,Harris,BRISK (common),52,0,0,0.0
+13,0,control,Harris,SIFT + BRISK (paired),52,0,0,0.0
+13,0,control,Harris,SIFT + BRISK (union),52,1,0,0.0
+13,0,control,Harris-Laplace,SIFT,76,3,0,0.0
+13,0,control,Harris-Laplace,ORB,69,4,4,1.0
+13,0,control,Harris-Laplace,BRISK,54,0,0,0.0
+13,0,control,Harris-Laplace,SIFT (common),54,1,0,0.0
+13,0,control,Harris-Laplace,BRISK (common),54,0,0,0.0
+13,0,control,Harris-Laplace,SIFT + BRISK (paired),54,0,0,0.0
+13,0,control,Harris-Laplace,SIFT + BRISK (union),76,3,0,0.0
+13,0,control,DoG,SIFT,247,5,0,0.0
+13,0,control,DoG,ORB,230,12,4,0.3333333333333333
+13,0,control,DoG,BRISK,240,3,0,0.0
+13,0,control,DoG,SIFT (common),240,4,4,1.0
+13,0,control,DoG,BRISK (common),240,3,0,0.0
+13,0,control,DoG,SIFT + BRISK (paired),240,1,0,0.0
+13,0,control,DoG,SIFT + BRISK (union),247,8,0,0.0
+15,12,reference,Harris,SIFT,800,50,42,0.84
+15,12,reference,Harris,ORB,795,11,5,0.45454545454545453
+15,12,reference,Harris,BRISK,800,2,0,0.0
+15,12,reference,Harris,SIFT (common),800,51,35,0.6862745098039216
+15,12,reference,Harris,BRISK (common),800,2,0,0.0
+15,12,reference,Harris,SIFT + BRISK (paired),800,46,40,0.8695652173913043
+15,12,reference,Harris,SIFT + BRISK (union),800,52,37,0.7115384615384616
+15,12,reference,Harris-Laplace,SIFT,800,258,189,0.7325581395348837
+15,12,reference,Harris-Laplace,ORB,781,9,4,0.4444444444444444
+15,12,reference,Harris-Laplace,BRISK,773,207,147,0.7101449275362319
+15,12,reference,Harris-Laplace,SIFT (common),773,257,189,0.7354085603112841
+15,12,reference,Harris-Laplace,BRISK (common),773,207,147,0.7101449275362319
+15,12,reference,Harris-Laplace,SIFT + BRISK (paired),773,259,234,0.9034749034749034
+15,12,reference,Harris-Laplace,SIFT + BRISK (union),800,297,229,0.7710437710437711
+15,12,reference,DoG,SIFT,800,268,263,0.9813432835820896
+15,12,reference,DoG,ORB,788,17,6,0.35294117647058826
+15,12,reference,DoG,BRISK,794,42,41,0.9761904761904762
+15,12,reference,DoG,SIFT (common),794,267,243,0.9101123595505618
+15,12,reference,DoG,BRISK (common),794,42,41,0.9761904761904762
+15,12,reference,DoG,SIFT + BRISK (paired),794,245,235,0.9591836734693877
+15,12,reference,DoG,SIFT + BRISK (union),800,276,254,0.9202898550724637
+15,0,control,Harris,SIFT,800,2,0,0.0
+15,0,control,Harris,ORB,795,3,0,0.0
+15,0,control,Harris,BRISK,800,1,0,0.0
+15,0,control,Harris,SIFT (common),800,2,0,0.0
+15,0,control,Harris,BRISK (common),800,1,0,0.0
+15,0,control,Harris,SIFT + BRISK (paired),800,0,0,0.0
+15,0,control,Harris,SIFT + BRISK (union),800,3,0,0.0
+15,0,control,Harris-Laplace,SIFT,800,3,0,0.0
+15,0,control,Harris-Laplace,ORB,781,3,0,0.0
+15,0,control,Harris-Laplace,BRISK,773,5,4,0.8
+15,0,control,Harris-Laplace,SIFT (common),773,3,0,0.0
+15,0,control,Harris-Laplace,BRISK (common),773,5,4,0.8
+15,0,control,Harris-Laplace,SIFT + BRISK (paired),773,0,0,0.0
+15,0,control,Harris-Laplace,SIFT + BRISK (union),800,8,4,0.5
+15,0,control,DoG,SIFT,800,5,0,0.0
+15,0,control,DoG,ORB,788,8,4,0.5
+15,0,control,DoG,BRISK,794,3,0,0.0
+15,0,control,DoG,SIFT (common),794,4,4,1.0
+15,0,control,DoG,BRISK (common),794,3,0,0.0
+15,0,control,DoG,SIFT + BRISK (paired),794,1,0,0.0
+15,0,control,DoG,SIFT + BRISK (union),800,8,5,0.625
+16,11,reference,Harris,SIFT,63,0,0,0.0
+16,11,reference,Harris,ORB,61,0,0,0.0
+16,11,reference,Harris,BRISK,62,0,0,0.0
+16,11,reference,Harris,SIFT (common),62,0,0,0.0
+16,11,reference,Harris,BRISK (common),62,0,0,0.0
+16,11,reference,Harris,SIFT + BRISK (paired),62,0,0,0.0
+16,11,reference,Harris,SIFT + BRISK (union),63,0,0,0.0
+16,11,reference,Harris-Laplace,SIFT,135,6,0,0.0
+16,11,reference,Harris-Laplace,ORB,124,14,0,0.0
+16,11,reference,Harris-Laplace,BRISK,113,0,0,0.0
+16,11,reference,Harris-Laplace,SIFT (common),113,2,0,0.0
+16,11,reference,Harris-Laplace,BRISK (common),113,0,0,0.0
+16,11,reference,Harris-Laplace,SIFT + BRISK (paired),113,0,0,0.0
+16,11,reference,Harris-Laplace,SIFT + BRISK (union),135,6,0,0.0
+16,11,reference,DoG,SIFT,263,8,0,0.0
+16,11,reference,DoG,ORB,241,0,0,0.0
+16,11,reference,DoG,BRISK,248,4,4,1.0
+16,11,reference,DoG,SIFT (common),248,9,7,0.7777777777777778
+16,11,reference,DoG,BRISK (common),248,4,4,1.0
+16,11,reference,DoG,SIFT + BRISK (paired),248,3,0,0.0
+16,11,reference,DoG,SIFT + BRISK (union),263,12,7,0.5833333333333334
+16,280,reference,Harris,SIFT,63,0,0,0.0
+16,280,reference,Harris,ORB,61,0,0,0.0
+16,280,reference,Harris,BRISK,62,1,0,0.0
+16,280,reference,Harris,SIFT (common),62,0,0,0.0
+16,280,reference,Harris,BRISK (common),62,1,0,0.0
+16,280,reference,Harris,SIFT + BRISK (paired),62,0,0,0.0
+16,280,reference,Harris,SIFT + BRISK (union),63,1,0,0.0
+16,280,reference,Harris-Laplace,SIFT,135,46,29,0.6304347826086957
+16,280,reference,Harris-Laplace,ORB,124,2,0,0.0
+16,280,reference,Harris-Laplace,BRISK,113,38,29,0.7631578947368421
+16,280,reference,Harris-Laplace,SIFT (common),113,44,30,0.6818181818181818
+16,280,reference,Harris-Laplace,BRISK (common),113,38,29,0.7631578947368421
+16,280,reference,Harris-Laplace,SIFT + BRISK (paired),113,47,35,0.7446808510638298
+16,280,reference,Harris-Laplace,SIFT + BRISK (union),135,60,47,0.7833333333333333
+16,280,reference,DoG,SIFT,263,98,80,0.8163265306122449
+16,280,reference,DoG,ORB,241,1,0,0.0
+16,280,reference,DoG,BRISK,248,18,7,0.3888888888888889
+16,280,reference,DoG,SIFT (common),248,98,80,0.8163265306122449
+16,280,reference,DoG,BRISK (common),248,18,7,0.3888888888888889
+16,280,reference,DoG,SIFT + BRISK (paired),248,56,47,0.8392857142857143
+16,280,reference,DoG,SIFT + BRISK (union),263,108,75,0.6944444444444444
+16,0,control,Harris,SIFT,63,0,0,0.0
+16,0,control,Harris,ORB,61,0,0,0.0
+16,0,control,Harris,BRISK,62,1,0,0.0
+16,0,control,Harris,SIFT (common),62,0,0,0.0
+16,0,control,Harris,BRISK (common),62,1,0,0.0
+16,0,control,Harris,SIFT + BRISK (paired),62,0,0,0.0
+16,0,control,Harris,SIFT + BRISK (union),63,1,0,0.0
+16,0,control,Harris-Laplace,SIFT,135,6,5,0.8333333333333334
+16,0,control,Harris-Laplace,ORB,124,1,0,0.0
+16,0,control,Harris-Laplace,BRISK,113,2,0,0.0
+16,0,control,Harris-Laplace,SIFT (common),113,4,4,1.0
+16,0,control,Harris-Laplace,BRISK (common),113,2,0,0.0
+16,0,control,Harris-Laplace,SIFT + BRISK (paired),113,0,0,0.0
+16,0,control,Harris-Laplace,SIFT + BRISK (union),135,8,5,0.625
+16,0,control,DoG,SIFT,263,5,4,0.8
+16,0,control,DoG,ORB,241,3,0,0.0
+16,0,control,DoG,BRISK,248,1,0,0.0
+16,0,control,DoG,SIFT (common),248,3,0,0.0
+16,0,control,DoG,BRISK (common),248,1,0,0.0
+16,0,control,DoG,SIFT + BRISK (paired),248,1,0,0.0
+16,0,control,DoG,SIFT + BRISK (union),263,6,4,0.6666666666666666
+18,182,reference,Harris,SIFT,234,1,0,0.0
+18,182,reference,Harris,ORB,231,0,0,0.0
+18,182,reference,Harris,BRISK,232,1,0,0.0
+18,182,reference,Harris,SIFT (common),232,1,0,0.0
+18,182,reference,Harris,BRISK (common),232,1,0,0.0
+18,182,reference,Harris,SIFT + BRISK (paired),232,0,0,0.0
+18,182,reference,Harris,SIFT + BRISK (union),234,2,0,0.0
+18,182,reference,Harris-Laplace,SIFT,238,49,35,0.7142857142857143
+18,182,reference,Harris-Laplace,ORB,227,3,0,0.0
+18,182,reference,Harris-Laplace,BRISK,213,40,28,0.7
+18,182,reference,Harris-Laplace,SIFT (common),213,50,30,0.6
+18,182,reference,Harris-Laplace,BRISK (common),213,40,28,0.7
+18,182,reference,Harris-Laplace,SIFT + BRISK (paired),213,50,40,0.8
+18,182,reference,Harris-Laplace,SIFT + BRISK (union),238,65,46,0.7076923076923077
+18,182,reference,DoG,SIFT,593,117,80,0.6837606837606838
+18,182,reference,DoG,ORB,564,5,4,0.8
+18,182,reference,DoG,BRISK,585,17,7,0.4117647058823529
+18,182,reference,DoG,SIFT (common),585,116,94,0.8103448275862069
+18,182,reference,DoG,BRISK (common),585,17,7,0.4117647058823529
+18,182,reference,DoG,SIFT + BRISK (paired),585,60,52,0.8666666666666667
+18,182,reference,DoG,SIFT + BRISK (union),593,130,88,0.676923076923077
+18,252,reference,Harris,SIFT,234,4,4,1.0
+18,252,reference,Harris,ORB,231,2,0,0.0
+18,252,reference,Harris,BRISK,232,3,0,0.0
+18,252,reference,Harris,SIFT (common),232,2,0,0.0
+18,252,reference,Harris,BRISK (common),232,3,0,0.0
+18,252,reference,Harris,SIFT + BRISK (paired),232,0,0,0.0
+18,252,reference,Harris,SIFT + BRISK (union),234,7,4,0.5714285714285714
+18,252,reference,Harris-Laplace,SIFT,238,19,11,0.5789473684210527
+18,252,reference,Harris-Laplace,ORB,227,5,0,0.0
+18,252,reference,Harris-Laplace,BRISK,213,19,11,0.5789473684210527
+18,252,reference,Harris-Laplace,SIFT (common),213,20,11,0.55
+18,252,reference,Harris-Laplace,BRISK (common),213,19,11,0.5789473684210527
+18,252,reference,Harris-Laplace,SIFT + BRISK (paired),213,21,12,0.5714285714285714
+18,252,reference,Harris-Laplace,SIFT + BRISK (union),238,29,17,0.5862068965517241
+18,252,reference,DoG,SIFT,593,49,36,0.7346938775510204
+18,252,reference,DoG,ORB,564,5,0,0.0
+18,252,reference,DoG,BRISK,585,9,5,0.5555555555555556
+18,252,reference,DoG,SIFT (common),585,46,33,0.717391304347826
+18,252,reference,DoG,BRISK (common),585,9,5,0.5555555555555556
+18,252,reference,DoG,SIFT + BRISK (paired),585,22,14,0.6363636363636364
+18,252,reference,DoG,SIFT + BRISK (union),593,56,36,0.6428571428571429
+18,0,control,Harris,SIFT,234,2,0,0.0
+18,0,control,Harris,ORB,231,3,0,0.0
+18,0,control,Harris,BRISK,232,2,0,0.0
+18,0,control,Harris,SIFT (common),232,2,0,0.0
+18,0,control,Harris,BRISK (common),232,2,0,0.0
+18,0,control,Harris,SIFT + BRISK (paired),232,1,0,0.0
+18,0,control,Harris,SIFT + BRISK (union),234,4,4,1.0
+18,0,control,Harris-Laplace,SIFT,238,0,0,0.0
+18,0,control,Harris-Laplace,ORB,227,1,0,0.0
+18,0,control,Harris-Laplace,BRISK,213,1,0,0.0
+18,0,control,Harris-Laplace,SIFT (common),213,0,0,0.0
+18,0,control,Harris-Laplace,BRISK (common),213,1,0,0.0
+18,0,control,Harris-Laplace,SIFT + BRISK (paired),213,0,0,0.0
+18,0,control,Harris-Laplace,SIFT + BRISK (union),238,1,0,0.0
+18,0,control,DoG,SIFT,593,7,4,0.5714285714285714
+18,0,control,DoG,ORB,564,5,4,0.8
+18,0,control,DoG,BRISK,585,4,4,1.0
+18,0,control,DoG,SIFT (common),585,6,5,0.8333333333333334
+18,0,control,DoG,BRISK (common),585,4,4,1.0
+18,0,control,DoG,SIFT + BRISK (paired),585,3,0,0.0
+18,0,control,DoG,SIFT + BRISK (union),593,11,6,0.5454545454545454
+20,272,reference,Harris,SIFT,145,6,0,0.0
+20,272,reference,Harris,ORB,145,3,0,0.0
+20,272,reference,Harris,BRISK,145,2,0,0.0
+20,272,reference,Harris,SIFT (common),145,6,0,0.0
+20,272,reference,Harris,BRISK (common),145,2,0,0.0
+20,272,reference,Harris,SIFT + BRISK (paired),145,3,0,0.0
+20,272,reference,Harris,SIFT + BRISK (union),145,8,4,0.5
+20,272,reference,Harris-Laplace,SIFT,346,24,12,0.5
+20,272,reference,Harris-Laplace,ORB,343,15,6,0.4
+20,272,reference,Harris-Laplace,BRISK,315,38,16,0.42105263157894735
+20,272,reference,Harris-Laplace,SIFT (common),315,21,12,0.5714285714285714
+20,272,reference,Harris-Laplace,BRISK (common),315,38,16,0.42105263157894735
+20,272,reference,Harris-Laplace,SIFT + BRISK (paired),315,23,13,0.5652173913043478
+20,272,reference,Harris-Laplace,SIFT + BRISK (union),346,50,19,0.38
+20,272,reference,DoG,SIFT,800,104,61,0.5865384615384616
+20,272,reference,DoG,ORB,799,24,6,0.25
+20,272,reference,DoG,BRISK,796,33,15,0.45454545454545453
+20,272,reference,DoG,SIFT (common),796,105,56,0.5333333333333333
+20,272,reference,DoG,BRISK (common),796,33,15,0.45454545454545453
+20,272,reference,DoG,SIFT + BRISK (paired),796,56,38,0.6785714285714286
+20,272,reference,DoG,SIFT + BRISK (union),800,122,59,0.48360655737704916
+20,117,reference,Harris,SIFT,145,31,25,0.8064516129032258
+20,117,reference,Harris,ORB,145,19,17,0.8947368421052632
+20,117,reference,Harris,BRISK,145,16,16,1.0
+20,117,reference,Harris,SIFT (common),145,31,25,0.8064516129032258
+20,117,reference,Harris,BRISK (common),145,16,16,1.0
+20,117,reference,Harris,SIFT + BRISK (paired),145,32,29,0.90625
+20,117,reference,Harris,SIFT + BRISK (union),145,39,29,0.7435897435897436
+20,117,reference,Harris-Laplace,SIFT,346,114,72,0.631578947368421
+20,117,reference,Harris-Laplace,ORB,343,23,16,0.6956521739130435
+20,117,reference,Harris-Laplace,BRISK,315,73,51,0.6986301369863014
+20,117,reference,Harris-Laplace,SIFT (common),315,113,89,0.7876106194690266
+20,117,reference,Harris-Laplace,BRISK (common),315,73,51,0.6986301369863014
+20,117,reference,Harris-Laplace,SIFT + BRISK (paired),315,115,109,0.9478260869565217
+20,117,reference,Harris-Laplace,SIFT + BRISK (union),346,139,92,0.6618705035971223
+20,117,reference,DoG,SIFT,800,291,230,0.7903780068728522
+20,117,reference,DoG,ORB,799,31,15,0.4838709677419355
+20,117,reference,DoG,BRISK,796,73,59,0.8082191780821918
+20,117,reference,DoG,SIFT (common),796,293,240,0.8191126279863481
+20,117,reference,DoG,BRISK (common),796,73,59,0.8082191780821918
+20,117,reference,DoG,SIFT + BRISK (paired),796,233,213,0.9141630901287554
+20,117,reference,DoG,SIFT + BRISK (union),800,309,201,0.6504854368932039
+20,0,control,Harris,SIFT,145,1,0,0.0
+20,0,control,Harris,ORB,145,2,0,0.0
+20,0,control,Harris,BRISK,145,0,0,0.0
+20,0,control,Harris,SIFT (common),145,1,0,0.0
+20,0,control,Harris,BRISK (common),145,0,0,0.0
+20,0,control,Harris,SIFT + BRISK (paired),145,1,0,0.0
+20,0,control,Harris,SIFT + BRISK (union),145,1,0,0.0
+20,0,control,Harris-Laplace,SIFT,346,1,0,0.0
+20,0,control,Harris-Laplace,ORB,343,6,4,0.6666666666666666
+20,0,control,Harris-Laplace,BRISK,315,3,0,0.0
+20,0,control,Harris-Laplace,SIFT (common),315,1,0,0.0
+20,0,control,Harris-Laplace,BRISK (common),315,3,0,0.0
+20,0,control,Harris-Laplace,SIFT + BRISK (paired),315,0,0,0.0
+20,0,control,Harris-Laplace,SIFT + BRISK (union),346,4,4,1.0
+20,0,control,DoG,SIFT,800,9,4,0.4444444444444444
+20,0,control,DoG,ORB,799,7,4,0.5714285714285714
+20,0,control,DoG,BRISK,796,10,4,0.4
+20,0,control,DoG,SIFT (common),796,9,4,0.4444444444444444
+20,0,control,DoG,BRISK (common),796,10,4,0.4
+20,0,control,DoG,SIFT + BRISK (paired),796,0,0,0.0
+20,0,control,DoG,SIFT + BRISK (union),800,19,5,0.2631578947368421
+22,242,reference,Harris,SIFT,800,92,49,0.532608695652174
+22,242,reference,Harris,ORB,635,34,26,0.7647058823529411
+22,242,reference,Harris,BRISK,765,23,15,0.6521739130434783
+22,242,reference,Harris,SIFT (common),765,90,50,0.5555555555555556
+22,242,reference,Harris,BRISK (common),765,23,15,0.6521739130434783
+22,242,reference,Harris,SIFT + BRISK (paired),765,61,50,0.819672131147541
+22,242,reference,Harris,SIFT + BRISK (union),800,104,57,0.5480769230769231
+22,242,reference,Harris-Laplace,SIFT,311,81,49,0.6049382716049383
+22,242,reference,Harris-Laplace,ORB,271,27,16,0.5925925925925926
+22,242,reference,Harris-Laplace,BRISK,287,66,44,0.6666666666666666
+22,242,reference,Harris-Laplace,SIFT (common),287,73,46,0.6301369863013698
+22,242,reference,Harris-Laplace,BRISK (common),287,66,44,0.6666666666666666
+22,242,reference,Harris-Laplace,SIFT + BRISK (paired),287,76,50,0.6578947368421053
+22,242,reference,Harris-Laplace,SIFT + BRISK (union),311,115,64,0.5565217391304348
+22,242,reference,DoG,SIFT,800,190,140,0.7368421052631579
+22,242,reference,DoG,ORB,659,29,18,0.6206896551724138
+22,242,reference,DoG,BRISK,789,55,50,0.9090909090909091
+22,242,reference,DoG,SIFT (common),789,182,120,0.6593406593406593
+22,242,reference,DoG,BRISK (common),789,55,50,0.9090909090909091
+22,242,reference,DoG,SIFT + BRISK (paired),789,155,108,0.6967741935483871
+22,242,reference,DoG,SIFT + BRISK (union),800,206,166,0.8058252427184466
+22,0,control,Harris,SIFT,800,26,12,0.46153846153846156
+22,0,control,Harris,ORB,635,6,4,0.6666666666666666
+22,0,control,Harris,BRISK,765,4,4,1.0
+22,0,control,Harris,SIFT (common),765,28,12,0.42857142857142855
+22,0,control,Harris,BRISK (common),765,4,4,1.0
+22,0,control,Harris,SIFT + BRISK (paired),765,3,0,0.0
+22,0,control,Harris,SIFT + BRISK (union),800,30,12,0.4
+22,0,control,Harris-Laplace,SIFT,311,5,0,0.0
+22,0,control,Harris-Laplace,ORB,271,7,4,0.5714285714285714
+22,0,control,Harris-Laplace,BRISK,287,2,0,0.0
+22,0,control,Harris-Laplace,SIFT (common),287,5,4,0.8
+22,0,control,Harris-Laplace,BRISK (common),287,2,0,0.0
+22,0,control,Harris-Laplace,SIFT + BRISK (paired),287,2,0,0.0
+22,0,control,Harris-Laplace,SIFT + BRISK (union),311,7,4,0.5714285714285714
+22,0,control,DoG,SIFT,800,8,0,0.0
+22,0,control,DoG,ORB,659,4,4,1.0
+22,0,control,DoG,BRISK,789,4,4,1.0
+22,0,control,DoG,SIFT (common),789,6,0,0.0
+22,0,control,DoG,BRISK (common),789,4,4,1.0
+22,0,control,DoG,SIFT + BRISK (paired),789,2,0,0.0
+22,0,control,DoG,SIFT + BRISK (union),800,12,5,0.4166666666666667
+23,260,reference,Harris,SIFT,393,275,240,0.8727272727272727
+23,260,reference,Harris,ORB,370,259,241,0.9305019305019305
+23,260,reference,Harris,BRISK,393,214,199,0.9299065420560748
+23,260,reference,Harris,SIFT (common),393,275,240,0.8727272727272727
+23,260,reference,Harris,BRISK (common),393,214,199,0.9299065420560748
+23,260,reference,Harris,SIFT + BRISK (paired),393,265,243,0.9169811320754717
+23,260,reference,Harris,SIFT + BRISK (union),393,292,229,0.7842465753424658
+23,260,reference,Harris-Laplace,SIFT,603,324,251,0.7746913580246914
+23,260,reference,Harris-Laplace,ORB,567,248,205,0.8266129032258065
+23,260,reference,Harris-Laplace,BRISK,566,252,186,0.7380952380952381
+23,260,reference,Harris-Laplace,SIFT (common),566,320,250,0.78125
+23,260,reference,Harris-Laplace,BRISK (common),566,252,186,0.7380952380952381
+23,260,reference,Harris-Laplace,SIFT + BRISK (paired),566,293,270,0.9215017064846417
+23,260,reference,Harris-Laplace,SIFT + BRISK (union),603,386,292,0.7564766839378239
+23,260,reference,DoG,SIFT,800,335,263,0.7850746268656716
+23,260,reference,DoG,ORB,767,305,241,0.7901639344262295
+23,260,reference,DoG,BRISK,800,228,193,0.8464912280701754
+23,260,reference,DoG,SIFT (common),800,333,247,0.7417417417417418
+23,260,reference,DoG,BRISK (common),800,228,193,0.8464912280701754
+23,260,reference,DoG,SIFT + BRISK (paired),800,327,242,0.7400611620795107
+23,260,reference,DoG,SIFT + BRISK (union),800,395,292,0.739240506329114
+23,0,control,Harris,SIFT,393,1,0,0.0
+23,0,control,Harris,ORB,370,6,4,0.6666666666666666
+23,0,control,Harris,BRISK,393,5,4,0.8
+23,0,control,Harris,SIFT (common),393,1,0,0.0
+23,0,control,Harris,BRISK (common),393,5,4,0.8
+23,0,control,Harris,SIFT + BRISK (paired),393,1,0,0.0
+23,0,control,Harris,SIFT + BRISK (union),393,6,4,0.6666666666666666
+23,0,control,Harris-Laplace,SIFT,603,5,5,1.0
+23,0,control,Harris-Laplace,ORB,567,7,4,0.5714285714285714
+23,0,control,Harris-Laplace,BRISK,566,4,4,1.0
+23,0,control,Harris-Laplace,SIFT (common),566,4,4,1.0
+23,0,control,Harris-Laplace,BRISK (common),566,4,4,1.0
+23,0,control,Harris-Laplace,SIFT + BRISK (paired),566,0,0,0.0
+23,0,control,Harris-Laplace,SIFT + BRISK (union),603,9,6,0.6666666666666666
+23,0,control,DoG,SIFT,800,12,6,0.5
+23,0,control,DoG,ORB,767,8,4,0.5
+23,0,control,DoG,BRISK,800,11,5,0.45454545454545453
+23,0,control,DoG,SIFT (common),800,11,6,0.5454545454545454
+23,0,control,DoG,BRISK (common),800,11,5,0.45454545454545453
+23,0,control,DoG,SIFT + BRISK (paired),800,5,4,0.8
+23,0,control,DoG,SIFT + BRISK (union),800,23,6,0.2608695652173913
+24,94,reference,Harris,SIFT,714,13,6,0.46153846153846156
+24,94,reference,Harris,ORB,558,14,6,0.42857142857142855
+24,94,reference,Harris,BRISK,705,8,4,0.5
+24,94,reference,Harris,SIFT (common),705,13,6,0.46153846153846156
+24,94,reference,Harris,BRISK (common),705,8,4,0.5
+24,94,reference,Harris,SIFT + BRISK (paired),705,1,0,0.0
+24,94,reference,Harris,SIFT + BRISK (union),714,21,7,0.3333333333333333
+24,94,reference,Harris-Laplace,SIFT,707,83,26,0.3132530120481928
+24,94,reference,Harris-Laplace,ORB,585,10,5,0.5
+24,94,reference,Harris-Laplace,BRISK,664,36,15,0.4166666666666667
+24,94,reference,Harris-Laplace,SIFT (common),664,77,26,0.33766233766233766
+24,94,reference,Harris-Laplace,BRISK (common),664,36,15,0.4166666666666667
+24,94,reference,Harris-Laplace,SIFT + BRISK (paired),664,49,19,0.3877551020408163
+24,94,reference,Harris-Laplace,SIFT + BRISK (union),707,102,27,0.2647058823529412
+24,94,reference,DoG,SIFT,800,46,29,0.6304347826086957
+24,94,reference,DoG,ORB,648,12,4,0.3333333333333333
+24,94,reference,DoG,BRISK,795,22,11,0.5
+24,94,reference,DoG,SIFT (common),795,45,26,0.5777777777777777
+24,94,reference,DoG,BRISK (common),795,22,11,0.5
+24,94,reference,DoG,SIFT + BRISK (paired),795,25,18,0.72
+24,94,reference,DoG,SIFT + BRISK (union),800,60,31,0.5166666666666667
+24,132,reference,Harris,SIFT,714,3,0,0.0
+24,132,reference,Harris,ORB,558,7,4,0.5714285714285714
+24,132,reference,Harris,BRISK,705,2,0,0.0
+24,132,reference,Harris,SIFT (common),705,3,0,0.0
+24,132,reference,Harris,BRISK (common),705,2,0,0.0
+24,132,reference,Harris,SIFT + BRISK (paired),705,4,4,1.0
+24,132,reference,Harris,SIFT + BRISK (union),714,5,4,0.8
+24,132,reference,Harris-Laplace,SIFT,707,101,55,0.5445544554455446
+24,132,reference,Harris-Laplace,ORB,585,3,0,0.0
+24,132,reference,Harris-Laplace,BRISK,664,93,56,0.6021505376344086
+24,132,reference,Harris-Laplace,SIFT (common),664,101,48,0.4752475247524752
+24,132,reference,Harris-Laplace,BRISK (common),664,93,56,0.6021505376344086
+24,132,reference,Harris-Laplace,SIFT + BRISK (paired),664,96,68,0.7083333333333334
+24,132,reference,Harris-Laplace,SIFT + BRISK (union),707,144,80,0.5555555555555556
+24,132,reference,DoG,SIFT,800,115,65,0.5652173913043478
+24,132,reference,DoG,ORB,648,7,4,0.5714285714285714
+24,132,reference,DoG,BRISK,795,34,21,0.6176470588235294
+24,132,reference,DoG,SIFT (common),795,116,67,0.5775862068965517
+24,132,reference,DoG,BRISK (common),795,34,21,0.6176470588235294
+24,132,reference,DoG,SIFT + BRISK (paired),795,63,51,0.8095238095238095
+24,132,reference,DoG,SIFT + BRISK (union),800,130,68,0.5230769230769231
+24,0,control,Harris,SIFT,714,2,0,0.0
+24,0,control,Harris,ORB,558,3,0,0.0
+24,0,control,Harris,BRISK,705,8,4,0.5
+24,0,control,Harris,SIFT (common),705,2,0,0.0
+24,0,control,Harris,BRISK (common),705,8,4,0.5
+24,0,control,Harris,SIFT + BRISK (paired),705,1,0,0.0
+24,0,control,Harris,SIFT + BRISK (union),714,10,4,0.4
+24,0,control,Harris-Laplace,SIFT,707,7,0,0.0
+24,0,control,Harris-Laplace,ORB,585,7,5,0.7142857142857143
+24,0,control,Harris-Laplace,BRISK,664,5,0,0.0
+24,0,control,Harris-Laplace,SIFT (common),664,8,0,0.0
+24,0,control,Harris-Laplace,BRISK (common),664,5,0,0.0
+24,0,control,Harris-Laplace,SIFT + BRISK (paired),664,2,0,0.0
+24,0,control,Harris-Laplace,SIFT + BRISK (union),707,12,9,0.75
+24,0,control,DoG,SIFT,800,17,5,0.29411764705882354
+24,0,control,DoG,ORB,648,6,4,0.6666666666666666
+24,0,control,DoG,BRISK,795,7,0,0.0
+24,0,control,DoG,SIFT (common),795,16,5,0.3125
+24,0,control,DoG,BRISK (common),795,7,0,0.0
+24,0,control,DoG,SIFT + BRISK (paired),795,5,0,0.0
+24,0,control,DoG,SIFT + BRISK (union),800,24,8,0.3333333333333333
+25,223,reference,Harris,SIFT,800,14,4,0.2857142857142857
+25,223,reference,Harris,ORB,715,7,4,0.5714285714285714
+25,223,reference,Harris,BRISK,797,1,0,0.0
+25,223,reference,Harris,SIFT (common),797,14,4,0.2857142857142857
+25,223,reference,Harris,BRISK (common),797,1,0,0.0
+25,223,reference,Harris,SIFT + BRISK (paired),797,3,0,0.0
+25,223,reference,Harris,SIFT + BRISK (union),800,15,10,0.6666666666666666
+25,223,reference,Harris-Laplace,SIFT,109,16,12,0.75
+25,223,reference,Harris-Laplace,ORB,85,0,0,0.0
+25,223,reference,Harris-Laplace,BRISK,95,13,9,0.6923076923076923
+25,223,reference,Harris-Laplace,SIFT (common),95,16,12,0.75
+25,223,reference,Harris-Laplace,BRISK (common),95,13,9,0.6923076923076923
+25,223,reference,Harris-Laplace,SIFT + BRISK (paired),95,11,9,0.8181818181818182
+25,223,reference,Harris-Laplace,SIFT + BRISK (union),109,23,15,0.6521739130434783
+25,223,reference,DoG,SIFT,556,31,18,0.5806451612903226
+25,223,reference,DoG,ORB,406,3,0,0.0
+25,223,reference,DoG,BRISK,507,5,5,1.0
+25,223,reference,DoG,SIFT (common),507,24,18,0.75
+25,223,reference,DoG,BRISK (common),507,5,5,1.0
+25,223,reference,DoG,SIFT + BRISK (paired),507,12,8,0.6666666666666666
+25,223,reference,DoG,SIFT + BRISK (union),556,32,17,0.53125
+25,0,control,Harris,SIFT,800,38,7,0.18421052631578946
+25,0,control,Harris,ORB,715,3,0,0.0
+25,0,control,Harris,BRISK,797,2,0,0.0
+25,0,control,Harris,SIFT (common),797,38,7,0.18421052631578946
+25,0,control,Harris,BRISK (common),797,2,0,0.0
+25,0,control,Harris,SIFT + BRISK (paired),797,4,4,1.0
+25,0,control,Harris,SIFT + BRISK (union),800,40,7,0.175
+25,0,control,Harris-Laplace,SIFT,109,2,0,0.0
+25,0,control,Harris-Laplace,ORB,85,0,0,0.0
+25,0,control,Harris-Laplace,BRISK,95,0,0,0.0
+25,0,control,Harris-Laplace,SIFT (common),95,0,0,0.0
+25,0,control,Harris-Laplace,BRISK (common),95,0,0,0.0
+25,0,control,Harris-Laplace,SIFT + BRISK (paired),95,0,0,0.0
+25,0,control,Harris-Laplace,SIFT + BRISK (union),109,2,0,0.0
+25,0,control,DoG,SIFT,556,13,4,0.3076923076923077
+25,0,control,DoG,ORB,406,4,4,1.0
+25,0,control,DoG,BRISK,507,1,0,0.0
+25,0,control,DoG,SIFT (common),507,11,4,0.36363636363636365
+25,0,control,DoG,BRISK (common),507,1,0,0.0
+25,0,control,DoG,SIFT + BRISK (paired),507,1,0,0.0
+25,0,control,DoG,SIFT + BRISK (union),556,14,4,0.2857142857142857
+27,127,reference,Harris,SIFT,800,563,508,0.9023090586145648
+27,127,reference,Harris,ORB,798,511,505,0.9882583170254403
+27,127,reference,Harris,BRISK,800,384,381,0.9921875
+27,127,reference,Harris,SIFT (common),800,563,508,0.9023090586145648
+27,127,reference,Harris,BRISK (common),800,384,381,0.9921875
+27,127,reference,Harris,SIFT + BRISK (paired),800,521,500,0.9596928982725528
+27,127,reference,Harris,SIFT + BRISK (union),800,601,498,0.8286189683860233
+27,127,reference,Harris-Laplace,SIFT,800,359,262,0.7298050139275766
+27,127,reference,Harris-Laplace,ORB,797,307,281,0.9153094462540716
+27,127,reference,Harris-Laplace,BRISK,783,286,243,0.8496503496503497
+27,127,reference,Harris-Laplace,SIFT (common),783,353,276,0.7818696883852692
+27,127,reference,Harris-Laplace,BRISK (common),783,286,243,0.8496503496503497
+27,127,reference,Harris-Laplace,SIFT + BRISK (paired),783,333,280,0.8408408408408409
+27,127,reference,Harris-Laplace,SIFT + BRISK (union),800,445,370,0.8314606741573034
+27,127,reference,DoG,SIFT,800,415,406,0.9783132530120482
+27,127,reference,DoG,ORB,799,410,401,0.9780487804878049
+27,127,reference,DoG,BRISK,799,245,238,0.9714285714285714
+27,127,reference,DoG,SIFT (common),799,415,406,0.9783132530120482
+27,127,reference,DoG,BRISK (common),799,245,238,0.9714285714285714
+27,127,reference,DoG,SIFT + BRISK (paired),799,411,404,0.9829683698296837
+27,127,reference,DoG,SIFT + BRISK (union),800,457,428,0.936542669584245
+27,0,control,Harris,SIFT,800,5,0,0.0
+27,0,control,Harris,ORB,798,3,0,0.0
+27,0,control,Harris,BRISK,800,4,4,1.0
+27,0,control,Harris,SIFT (common),800,5,0,0.0
+27,0,control,Harris,BRISK (common),800,4,4,1.0
+27,0,control,Harris,SIFT + BRISK (paired),800,0,0,0.0
+27,0,control,Harris,SIFT + BRISK (union),800,9,4,0.4444444444444444
+27,0,control,Harris-Laplace,SIFT,800,3,0,0.0
+27,0,control,Harris-Laplace,ORB,797,4,4,1.0
+27,0,control,Harris-Laplace,BRISK,783,3,0,0.0
+27,0,control,Harris-Laplace,SIFT (common),783,4,4,1.0
+27,0,control,Harris-Laplace,BRISK (common),783,3,0,0.0
+27,0,control,Harris-Laplace,SIFT + BRISK (paired),783,0,0,0.0
+27,0,control,Harris-Laplace,SIFT + BRISK (union),800,6,5,0.8333333333333334
+27,0,control,DoG,SIFT,800,6,4,0.6666666666666666
+27,0,control,DoG,ORB,799,1,0,0.0
+27,0,control,DoG,BRISK,799,3,0,0.0
+27,0,control,DoG,SIFT (common),799,6,4,0.6666666666666666
+27,0,control,DoG,BRISK (common),799,3,0,0.0
+27,0,control,DoG,SIFT + BRISK (paired),799,3,0,0.0
+27,0,control,DoG,SIFT + BRISK (union),800,9,4,0.4444444444444444
+28,47,reference,Harris,SIFT,63,3,0,0.0
+28,47,reference,Harris,ORB,54,7,4,0.5714285714285714
+28,47,reference,Harris,BRISK,63,3,0,0.0
+28,47,reference,Harris,SIFT (common),63,3,0,0.0
+28,47,reference,Harris,BRISK (common),63,3,0,0.0
+28,47,reference,Harris,SIFT + BRISK (paired),63,3,0,0.0
+28,47,reference,Harris,SIFT + BRISK (union),63,5,0,0.0
+28,47,reference,Harris-Laplace,SIFT,137,8,6,0.75
+28,47,reference,Harris-Laplace,ORB,123,8,0,0.0
+28,47,reference,Harris-Laplace,BRISK,108,4,4,1.0
+28,47,reference,Harris-Laplace,SIFT (common),108,11,6,0.5454545454545454
+28,47,reference,Harris-Laplace,BRISK (common),108,4,4,1.0
+28,47,reference,Harris-Laplace,SIFT + BRISK (paired),108,7,5,0.7142857142857143
+28,47,reference,Harris-Laplace,SIFT + BRISK (union),137,12,7,0.5833333333333334
+28,47,reference,DoG,SIFT,792,44,16,0.36363636363636365
+28,47,reference,DoG,ORB,740,16,7,0.4375
+28,47,reference,DoG,BRISK,785,28,8,0.2857142857142857
+28,47,reference,DoG,SIFT (common),785,44,15,0.3409090909090909
+28,47,reference,DoG,BRISK (common),785,28,8,0.2857142857142857
+28,47,reference,DoG,SIFT + BRISK (paired),785,25,10,0.4
+28,47,reference,DoG,SIFT + BRISK (union),792,68,19,0.27941176470588236
+28,13,reference,Harris,SIFT,63,8,4,0.5
+28,13,reference,Harris,ORB,54,4,4,1.0
+28,13,reference,Harris,BRISK,63,1,0,0.0
+28,13,reference,Harris,SIFT (common),63,8,4,0.5
+28,13,reference,Harris,BRISK (common),63,1,0,0.0
+28,13,reference,Harris,SIFT + BRISK (paired),63,4,4,1.0
+28,13,reference,Harris,SIFT + BRISK (union),63,9,4,0.4444444444444444
+28,13,reference,Harris-Laplace,SIFT,137,27,17,0.6296296296296297
+28,13,reference,Harris-Laplace,ORB,123,11,6,0.5454545454545454
+28,13,reference,Harris-Laplace,BRISK,108,22,16,0.7272727272727273
+28,13,reference,Harris-Laplace,SIFT (common),108,28,17,0.6071428571428571
+28,13,reference,Harris-Laplace,BRISK (common),108,22,16,0.7272727272727273
+28,13,reference,Harris-Laplace,SIFT + BRISK (paired),108,26,16,0.6153846153846154
+28,13,reference,Harris-Laplace,SIFT + BRISK (union),137,38,25,0.6578947368421053
+28,13,reference,DoG,SIFT,792,123,74,0.6016260162601627
+28,13,reference,DoG,ORB,740,15,5,0.3333333333333333
+28,13,reference,DoG,BRISK,785,43,13,0.3023255813953488
+28,13,reference,DoG,SIFT (common),785,134,71,0.5298507462686567
+28,13,reference,DoG,BRISK (common),785,43,13,0.3023255813953488
+28,13,reference,DoG,SIFT + BRISK (paired),785,83,51,0.6144578313253012
+28,13,reference,DoG,SIFT + BRISK (union),792,153,68,0.4444444444444444
+28,0,control,Harris,SIFT,63,0,0,0.0
+28,0,control,Harris,ORB,54,0,0,0.0
+28,0,control,Harris,BRISK,63,1,0,0.0
+28,0,control,Harris,SIFT (common),63,0,0,0.0
+28,0,control,Harris,BRISK (common),63,1,0,0.0
+28,0,control,Harris,SIFT + BRISK (paired),63,0,0,0.0
+28,0,control,Harris,SIFT + BRISK (union),63,1,0,0.0
+28,0,control,Harris-Laplace,SIFT,137,1,0,0.0
+28,0,control,Harris-Laplace,ORB,123,3,0,0.0
+28,0,control,Harris-Laplace,BRISK,108,0,0,0.0
+28,0,control,Harris-Laplace,SIFT (common),108,0,0,0.0
+28,0,control,Harris-Laplace,BRISK (common),108,0,0,0.0
+28,0,control,Harris-Laplace,SIFT + BRISK (paired),108,0,0,0.0
+28,0,control,Harris-Laplace,SIFT + BRISK (union),137,1,0,0.0
+28,0,control,DoG,SIFT,792,7,5,0.7142857142857143
+28,0,control,DoG,ORB,740,10,5,0.5
+28,0,control,DoG,BRISK,785,21,8,0.38095238095238093
+28,0,control,DoG,SIFT (common),785,9,5,0.5555555555555556
+28,0,control,DoG,BRISK (common),785,21,8,0.38095238095238093
+28,0,control,DoG,SIFT + BRISK (paired),785,2,0,0.0
+28,0,control,DoG,SIFT + BRISK (union),792,28,8,0.2857142857142857
