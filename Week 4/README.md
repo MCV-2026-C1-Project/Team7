@@ -20,7 +20,7 @@ The code is the final Team 7 pipeline (Weeks 1–4 in one tree: `src/` and `main
    paintings, refined with quadrilaterals; reading order (rows top to bottom, left to right within a row).
    Before the three-painting limit, regions smaller than 10 % of the photo's largest region are dropped
    (`MIN_REGION_FRACTION = 0.10` in `src/config.py`), see Region filter.
-2. **Features (Task 1):** each painting crop filtered if noisy, grey, DoG keypoints (at most 1000, 900 px) with
+2. **Features (Task 1):** each painting crop filtered if noisy, grey, DoG keypoints (at most 1000, with the longest image side limited to 900 px) with
    SIFT descriptors (`src/keypoints.py`, `src/local_descriptors.py`).
 3. **Matching (Task 2-I):** SIFT compared as RootSIFT (Hellinger), Lowe ratio 0.75, cross-check, RANSAC
    homography (5 px); score = inliers counted once per distinct museum keypoint (`src/matching.py`).
@@ -32,8 +32,7 @@ Settings: `LocalMethod` in `src/local_pipeline.py`, with its values in `src/conf
 `UNKNOWN_THRESHOLD`, `RECOVERY_MIN_INLIERS`, `GLOBAL_RATIO`, `MIN_REGION_FRACTION`). 
 
 Task 1 study was run with OpenCV 4.11; the delivered pipeline uses 4.13.0.92.
-The study also kept at most 800 keypoints per image and verified with a 3 px RANSAC threshold
-(metadata.json); the pipeline uses 1000 keypoints and 5 px.
+The study also kept at most 800 keypoints per image and verified with a 3 px RANSAC threshold; the pipeline uses 1000 keypoints and 5 px.
 
 ## Results (QSD1-W4: 30 photos, 39 paintings, 10 unknown)
 
@@ -54,7 +53,7 @@ Harris, Harris-Laplace and DoG × SIFT, ORB and BRISK (9 combinations) on QSD1-W
 Its cost is moderate: mean 77 ms detection + description per image, against 57 ms for Harris + SIFT and 136 ms for
 Harris-Laplace + SIFT; the nine combinations range from 18 ms (Harris + BRISK) to 136 ms.
 
-The means above are computed from the CSVs over all rows of each combination.
+The means above summarize all evaluated images or pairs for each detector–descriptor combination.
 
 ### Task 2 (I): metric comparison and ablation
 
@@ -70,8 +69,8 @@ paintings, recovery and the global fallback). Best setting per descriptor and me
 | ORB | Hamming, ratio 0.8 | on | matches | 13/29 / 0.448 | 21/39 / 0.538 | 3.9 / 4.9 |
 
 Score "matches" counts tentative matches (no RANSAC). SIFT is clearly best; the three SIFT metrics tie on mAP@1 and
-Hellinger has the best QSD2-W3 mAP@5 (0.962, with score = matches) at the lowest time. The submitted setting (SIFT,
-Hellinger, ratio 0.75, cross-check, RANSAC, distinct inliers) gives 24/29, mAP@1 0.828, mAP@5 0.845, 8.5 s/query on QSD1-W4
+Hellinger has the best QSD2-W3 mAP@5 (0.962, with score = matches) at the lowest time. The matching configuration retained for submission (SIFT,
+Hellinger, ratio 0.75, cross-check, RANSAC, distinct inliers), evaluated within that earlier local-only pipeline, gives 24/29, mAP@1 0.828, mAP@5 0.845, 8.5 s/query on QSD1-W4
 and 37/39, mAP@1 0.949, mAP@5 0.949, 10.2 s/query on QSD2-W3. Ablation (SIFT + Hellinger, ratio 0.75), QSD1-W4 / QSD2-W3 mAP@1: ratio test only 0.793 / 0.923;
 + cross-check 0.828 / 0.949; + RANSAC inliers and + distinct inliers (chosen) unchanged at 0.828 / 0.949. RANSAC and distinct inliers are kept because the score is also the evidence for the
 unknown decision (a geometric consensus, not a raw match count) and the distinct count stops degenerate
@@ -111,17 +110,44 @@ Before the three-painting limit, regions smaller than 10 % of the photo's larges
 (`MIN_REGION_FRACTION` in `src/config.py`), because a spurious 161×65 region in QSD2-W3 00002 became an extra
 `[-1]` (the smallest real painting in the dev sets is 20 % of the largest). On QSD2-W3 with the full Week 4
 method, mAP@1 goes from 0.950 to 0.974 (39 regions).
+
 ## Reproduce
 
-Delivery and development scores (run from this folder, datasets in `data/`):
+Use Python 3.11 or 3.12. Run from this folder (`Week 4/`) and install the dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Datasets are not included. Place the course datasets under `data/`:
+
+```text
+data/
+├── BBDD/
+├── qsd1_w4/
+├── qsd2_w3/
+└── qst1_w4/
+```
+
+The development sets must include their course annotations for `evaluate`. To keep the datasets elsewhere,
+append `--data /path/to/datasets` to any command below.
+
+Evaluate the final method and the Week 3 baseline:
 
 ```bash
 python main.py evaluate --week 4 --set qsd1_w4        # Week 4 method1 on QSD1-W4 (table above)
 python main.py evaluate --week 4 --set qsd2_w3        # Week 4 method1 on QSD2-W3
 python main.py evaluate --week 3 --set qsd1_w4        # Task 3 baseline: the Week 3 method on QSD1-W4
-python main.py predict --week 4                       # QST1-W4 -> weeks/week4/submission/QST1/method1/result.pkl (not tracked in git)
-python main.py validate --week 4
 ```
+
+Regenerate the blind-test predictions in a separate file and validate it:
+
+```bash
+python main.py predict --week 4 --out /tmp/week4_result.pkl
+python main.py validate --week 4 --delivery /tmp/week4_result.pkl
+```
+
+Without `--out`, `predict` writes `weeks/week4/submission/QST1/method1/result.pkl`, which is not tracked in this repository.
 
 `--threshold N` changes the local acceptance score (default 10); `--max-paintings` the painting limit (default 3).
 
@@ -139,4 +165,4 @@ python main.py validate --week 4
 
 ## Blind test
 
-The QST1-W4 `result.pkl` (30 queries, 39 paintings, 9 answered `[-1]`) was delivered through the course Google Drive folder, not stored in this repository. The score is published by the course staff.
+The QST1-W4 `result.pkl` (30 queries, 39 paintings, 9 answered `[-1]`) was delivered through the course Google Drive folder and is not stored in this repository. The score is published by the course staff.
