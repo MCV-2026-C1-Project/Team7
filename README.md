@@ -58,7 +58,7 @@ Week 4 lives in [`Week 4/`](Week%204) (run from that folder: `python main.py eva
 | Week 3 method1 | 0.590 | 0.793 | 0 (never answers `[-1]`) |
 | Week 4 method1 | 0.974 | 0.966 | 0.952 |
 
-The thresholds were chosen on QSD1-W4, so these are optimistic. Delivered blind-test file: [`Week 4/weeks/week4/submission/QST1/method1/result.pkl`](Week%204/weeks/week4/submission/QST1/method1/result.pkl) (39 paintings, 9 `[-1]`; official score not yet published).
+The thresholds were chosen on QSD1-W4, so these are optimistic. Blind-test file (39 paintings, 9 `[-1]`) delivered through the course Drive.
 
 ## Week 3
 

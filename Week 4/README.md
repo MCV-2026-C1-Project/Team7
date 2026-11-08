@@ -119,7 +119,7 @@ Delivery and development scores (run from this folder, datasets in `data/`):
 python main.py evaluate --week 4 --set qsd1_w4        # Week 4 method1 on QSD1-W4 (table above)
 python main.py evaluate --week 4 --set qsd2_w3        # Week 4 method1 on QSD2-W3
 python main.py evaluate --week 3 --set qsd1_w4        # Task 3 baseline: the Week 3 method on QSD1-W4
-python main.py predict --week 4 --force               # QST1-W4 -> weeks/week4/submission/QST1/method1/result.pkl
+python main.py predict --week 4                       # QST1-W4 -> weeks/week4/submission/QST1/method1/result.pkl (not tracked in git)
 python main.py validate --week 4
 ```
 
@@ -137,6 +137,6 @@ python main.py validate --week 4
 - The Task 1 study used OpenCV 4.11, at most 800 keypoints and a 3 px RANSAC threshold; the delivery uses
   4.13.0.92, 1000 keypoints and 5 px.
 
-## Delivered file
+## Blind test
 
-`weeks/week4/submission/QST1/method1/result.pkl`: final method on QST1-W4, 30 queries, 39 paintings, 9 answered `[-1]` (`python main.py predict --week 4`, then `python main.py validate --week 4`).
+The QST1-W4 `result.pkl` (30 queries, 39 paintings, 9 answered `[-1]`) was delivered through the course Google Drive folder, not stored in this repository. The score is published by the course staff.
