@@ -2,7 +2,7 @@
 
 Team 7 · MCV C1. Final presentation slides: [Google Slides](https://docs.google.com/presentation/d/1dlodYrXETs0cELaLBbFmOQlS5Bq-oSE3WiPBOOjOVC8/edit?usp=sharing).
 
-<p align="center"><img src="assets/week4_matching.jpg" alt="Keypoints, RANSAC-verified matches, inlier scores against the acceptance threshold and the final answer next to the ground truth" width="820"></p>
+<p align="center"><img src="assets/week4_matching.jpg" alt="Week 4 pipeline on a photo with two paintings: regions found, keypoints, RANSAC-verified matches, inlier scores against the acceptance threshold and the answer next to the ground truth" width="820"></p>
 
 The code is the final Team 7 pipeline (Weeks 1–4 in one tree: `src/` and `main.py`). Run everything from this folder with `pip install -r requirements.txt`.
 

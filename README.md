@@ -1,7 +1,7 @@
 # Museum Painting Retrieval — Team 7
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MCV-2026-C1-Project/Team7/submission/Week%204/assets/week4_matching.jpg" alt="Week 4 example: DoG keypoints of a query painting, RANSAC-verified matches with the best museum image, inlier scores against the acceptance threshold, and the final answer next to the ground truth" width="820">
+  <img src="https://raw.githubusercontent.com/MCV-2026-C1-Project/Team7/submission/Week%204/assets/week4_matching.jpg" alt="Week 4 pipeline on a photo with two paintings: regions found, keypoints, RANSAC-verified matches, inlier scores against the acceptance threshold and the answer next to the ground truth" width="820">
 </p>
 
 <p align="center">
