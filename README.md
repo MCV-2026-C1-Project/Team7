@@ -19,9 +19,9 @@
   <img src="https://img.shields.io/badge/Delivery-Top--10%20Rankings-2E8B57" alt="Top 10 rankings">
 </p>
 
-A content-based image retrieval pipeline for matching museum painting photographs against a reference database. The project explores global and spatial color descriptors, background segmentation, histogram distances, and, from Week 3, noise filtering, texture descriptors, and queries with more than one painting, with reproducible retrieval evaluation.
+A content-based image retrieval pipeline for matching museum painting photographs against a reference database. The project explores global and spatial color descriptors, background segmentation, histogram distances, and, from Week 3, noise filtering, texture descriptors, and queries with more than one painting, and, in Week 4, local features (DoG keypoints, RootSIFT, RANSAC verification) with unknown paintings answered `[-1]`, with reproducible retrieval evaluation.
 
-The Week 2 submission provides two fixed retrieval methods, optional development evaluation, validated Top-10 ranking exports, and predicted foreground masks for queries containing background. The Week 3 submission, in [`Week 3/`](Week%203), adds noise detection and filtering, LBP, DCT and wavelet texture descriptors fused with the Week 2 colour descriptor, and one Top-10 ranking for each of up to two paintings per query.
+The Week 2 submission provides two fixed retrieval methods, optional development evaluation, validated Top-10 ranking exports, and predicted foreground masks for queries containing background. The Week 3 submission, in [`Week 3/`](Week%203), adds noise detection and filtering, LBP, DCT and wavelet texture descriptors fused with the Week 2 colour descriptor, and one Top-10 ranking for each of up to two paintings per query. The Week 4 submission, in [`Week 4/`](Week%204), replaces the global descriptor by local-feature matching with geometric verification, handles up to three paintings per photo and answers `[-1]` for paintings that are not in the museum.
 
 ---
 
@@ -36,6 +36,7 @@ The Week 2 submission provides two fixed retrieval methods, optional development
 - [Dataset setup](#dataset-setup)
 - [Run Week 2](#run-week-2)
 - [Run Week 3](#run-week-3)
+- [Run Week 4](#run-week-4)
 - [Evaluate on development data](#development-evaluation)
 - [Week 1 compatibility](#week-1-compatibility)
 - [Project structure](#project-structure)
@@ -181,9 +182,9 @@ Method 1 provides the highest mean mAP@5 and the smaller descriptor. Method 2 pe
 
 ## Installation
 
-**Requirements:** Python 3.10 or newer.
+**Requirements:** Python 3.10 or newer (Week 4: Python 3.11 or 3.12, see `Week 4/pyproject.toml`).
 
-Clone the repository and enter the directory of the week you want to run (Week 2 shown; use `"Week 3"` for Week 3):
+Clone the repository and enter the directory of the week you want to run (Week 2 shown; use `"Week 3"` or `"Week 4"` for those weeks):
 
 ```bash
 git clone https://github.com/MCV-2026-C1-Project/Team7.git
@@ -203,7 +204,7 @@ Install the project:
 python -m pip install -e .
 ```
 
-In `Week 3` you can also use `python -m pip install -r requirements.txt`. Inference and evaluation require NumPy and OpenCV. The project configuration declares the installation dependencies.
+In `Week 3` and `Week 4` you can also use `python -m pip install -r requirements.txt`. Inference and evaluation require NumPy and OpenCV. The project configuration declares the installation dependencies.
 
 To inspect the available command-line options:
 
@@ -319,6 +320,20 @@ results/week3/
 
 Other presets (`--method`): `method1` / `method2` (Week 2), `texture_lbp` / `texture_dct` / `texture_wavelet` (texture alone), `colour_lbp_dct` and `colour_wavelet` (earlier fusions).
 
+## Run Week 4
+
+Week 4 uses the same entry point style, with the week selected by `--week`. The data folder must contain `BBDD/`, `qsd1_w4/` and `qst1_w4/`.
+
+```bash
+cd "Week 4"
+pip install -r requirements.txt
+
+python main.py evaluate --week 4 --set qsd1_w4   # mAP@1/5/10 and unknown precision / recall / F1
+python main.py evaluate --week 3 --set qsd1_w4   # Week 3 method on the same set (comparison)
+python main.py predict --week 4                  # QST1-W4 -> weeks/week4/submission/QST1/method1/result.pkl
+python main.py validate --week 4
+```
+
 ## Development evaluation
 
 Use `--evaluate` to evaluate on annotated Week 1 and Week 2 development datasets (Week 3 uses `python main.py evaluate`, above).
@@ -403,6 +418,24 @@ Week 2/
 ```
 
 ```text
+Week 4/
+├── main.py                 # CLI: evaluate / predict / validate, --week 1-4
+├── README.md
+├── requirements.txt
+├── pyproject.toml
+├── .gitignore
+├── assets/
+│   └── week4_matching.jpg  # example shown at the top of this README
+└── src/
+    ├── keypoints.py        # DoG keypoints
+    ├── local_descriptors.py # SIFT / RootSIFT descriptors
+    ├── matching.py         # ratio test, cross-check, RANSAC, distinct-inlier score
+    ├── local_pipeline.py   # regions -> keypoints -> matches -> ranking, merged-region recovery
+    ├── unknowns.py         # unknown decision: local threshold, global fallback, [-1]
+    └── (Weeks 1-3 modules: config, segmentation, denoise, colour, texture, ...)
+```
+
+```text
 Week 3/
 ├── main.py                 # CLI: evaluate / predict / validate
 ├── README.md
@@ -426,7 +459,7 @@ The source code separates descriptor computation, segmentation, retrieval, evalu
 
 ## Reproducibility and submission format
 
-In Weeks 1 and 2 the pipeline assumes one painting per query.
+In Weeks 1 and 2 the pipeline assumes one painting per query. In Week 4 a painting that is not in the museum is answered `[-1]` (`[[-1]]` per painting in the pickle).
 
 **Retrieval output**
 
@@ -466,5 +499,5 @@ Inference writes only explicitly requested submission artifacts. It does not aut
 <p align="center">
   <strong>Team 7 · Museum Painting Retrieval</strong>
   <br>
-  <sub>MCV C1 — Weeks 1 to 3 · Colour and texture image retrieval</sub>
+  <sub>MCV C1 — Weeks 1 to 4 · Colour, texture and local-feature image retrieval</sub>
 </p>
