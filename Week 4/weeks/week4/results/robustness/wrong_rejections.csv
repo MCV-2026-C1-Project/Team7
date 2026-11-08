@@ -1,5 +1,0 @@
-set,query,painting_index,ground_truth,local_top_id,local_score,ground_truth_local_score,global_top_id,global_ratio,answer_10_085,decision,correct,wrong_rejection
-qsd1_w3,00002,0,128,128,6,6,128,0.73,128,Global fallback,True,False
-qsd2_w3,00002,2,,0,0,,36,0.9228,-1,Unknown rejection,False,False
-qsd2_w3,00019,0,176,82,6,4,176,0.7103,176,Global fallback,True,False
-qsd2_w3,00019,1,128,211,5,4,128,0.9315,-1,Unknown rejection,False,True

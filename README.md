@@ -46,7 +46,7 @@ The Week 2 submission provides two fixed retrieval methods, optional development
 
 Final presentation slides: [Google Slides](https://docs.google.com/presentation/d/1dlodYrXETs0cELaLBbFmOQlS5Bq-oSE3WiPBOOjOVC8/edit?usp=sharing).
 
-Week 4 lives in [`Week 4/`](Week%204) (run from that folder: `python main.py evaluate --week 4 --set qsd1_w4 | predict --week 4 | validate --week 4`; report in [`Week 4/weeks/week4/README.md`](Week%204/weeks/week4/README.md)). Global descriptors are replaced by local features:
+Week 4 lives in [`Week 4/`](Week%204) (run from that folder: `python main.py evaluate --week 4 --set qsd1_w4 | predict --week 4 | validate --week 4`; details in [`Week 4/README.md`](Week%204/README.md)). Global descriptors are replaced by local features:
 
 1. **Regions:** wall-plane background removal, up to three paintings per photo, in reading order.
 2. **Keypoints and descriptors:** DoG keypoints with RootSIFT descriptors (Hellinger distance).

@@ -1,5 +1,0 @@
-set,variant,top1_known,map1_known,map5_known
-qsd1_w4,without check,24/29,0.8276,0.8448
-qsd1_w4,with check,19/29,0.6552,0.6552
-qsd2_w3,without check,37/39,0.9487,0.9487
-qsd2_w3,with check,30/39,0.7692,0.7692

@@ -1,2 +1,0 @@
-method,set,n_evaluated,top1_hits,map@1,map@5,known_paintings,known_top1_hits,known_map@1,known_map@5,unknown_precision,unknown_recall,unknown_f1
-Week 3 method1,qsd1_w4,39,23,0.5897,0.6026,29,23,0.7931,0.8103,0.0,0.0,0.0
