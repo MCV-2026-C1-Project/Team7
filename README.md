@@ -1,13 +1,14 @@
 # Museum Painting Retrieval — Team 7
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MCV-2026-C1-Project/Team7/submission/Week%203/assets/week3_retrieval.jpg" alt="Week 3 example: a query photo with two paintings found, each painting crop and its rank-1 match in the database" width="820">
+  <img src="https://raw.githubusercontent.com/MCV-2026-C1-Project/Team7/submission/Week%204/assets/week4_matching.jpg" alt="Week 4 example: a query painting and its museum image with the RANSAC-verified keypoint matches" width="820">
 </p>
 
 <p align="center">
   <strong>Content-Based Image Retrieval · Computer Vision · MCV C1</strong>
   <br>
-  Week 1 baseline, Weeks 2, 3 and 4 submissions
+  Week 1 baseline, Weeks 2, 3 and 4 submissions<br>
+  <a href="https://docs.google.com/presentation/d/1dlodYrXETs0cELaLBbFmOQlS5Bq-oSE3WiPBOOjOVC8/edit?usp=sharing">Final presentation slides</a>
 </p>
 
 <p align="center">
@@ -42,6 +43,8 @@ The Week 2 submission provides two fixed retrieval methods, optional development
 - [Reproducibility and submission format](#reproducibility-and-submission-format)
 
 ## Week 4
+
+Final presentation slides: [Google Slides](https://docs.google.com/presentation/d/1dlodYrXETs0cELaLBbFmOQlS5Bq-oSE3WiPBOOjOVC8/edit?usp=sharing).
 
 Week 4 lives in [`Week 4/`](Week%204) (run from that folder: `python main.py evaluate --week 4 --set qsd1_w4 | predict --week 4 | validate --week 4`; report in [`Week 4/weeks/week4/README.md`](Week%204/weeks/week4/README.md)). Global descriptors are replaced by local features:
 
