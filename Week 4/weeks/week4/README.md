@@ -32,10 +32,10 @@ The study also kept at most 800 keypoints per image and verified with a 3 px RAN
 
 ## Results (QSD1-W4: 30 photos, 39 paintings, 10 unknown)
 
-| Method | Set | top-1 | mAP@1 | mAP@5 | Unknown precision / recall / F1 | Test (QST1-W4) |
+| Method | Set | top-1 | mAP@1 | mAP@5 | Unknown precision / recall / F1 | Blind test (QST1-W4) |
 | --- | --- | ---: | ---: | ---: | --- | --- |
-| Week 4 method1 | QSD1-W4 | 38/39 | 0.974 | 0.974 | 0.909 / 1.000 / 0.952 | TBD |
-| Week 4 method1 | QSD1-W4, known paintings only | 28/29 | 0.966 | 0.966 | – | TBD |
+| Week 4 method1 | QSD1-W4 | 38/39 | 0.974 | 0.974 | 0.909 / 1.000 / 0.952 | submitted: 30 photos, 39 paintings, 9 `[-1]`; score not yet published |
+| Week 4 method1 | QSD1-W4, known paintings only | 28/29 | 0.966 | 0.966 | – | – |
 | Week 4 method1 | QSD2-W3 (39 paintings, all known) | 38/39 | 0.974 | 0.974 | – | – |
 
 Sources: QSD1-W4 [results/final/](results/final/) (`metrics.csv`, per-painting `answers.csv`); QSD2-W3 option (c10)
@@ -105,7 +105,7 @@ per-painting ranks [metrics_qsd1_w4_paintings.csv](results/task2/metrics_qsd1_w4
 ### Task 3: comparison with Week 3
 
 The Week 3 method (global colour + LBP + DCT + wavelet, up to two paintings, no `[-1]` answer) is perfect on its own
-development sets (QSD1-W3 30/30, QSD2-W3 39/39, mAP@1 1.000; `weeks/week3/results/comparison.md`). On QSD1-W4
+development sets (QSD1-W3 30/30, QSD2-W3 39/39, mAP@1 1.000). On QSD1-W4
 ([results/task3/](results/task3/), [results/final/](results/final/)):
 
 | Method | All 39 paintings: top-1 / mAP@1 / mAP@5 | 29 known paintings: top-1 / mAP@1 / mAP@5 | Unknown F1 |
@@ -124,15 +124,6 @@ Before the three-painting limit, regions smaller than 10 % of the photo's larges
 `[-1]` (the smallest real painting in the dev sets is 20 % of the largest). On QSD2-W3 with the full Week 4
 method, mAP@1 goes from 0.950 to 0.974 (39 regions); every rejected region is listed in
 [rejected_regions.csv](results/regions/rejected_regions.csv).
-
-## Inspection figures ([results/inspection/](results/inspection/))
-
-The 69 JPEGs are written by `experiments/pipeline_inspection.ipynb` (final method on every QSD1-W4 query):
-
-| File | Content |
-| --- | --- |
-| `query_NNNNN_1.jpg` | regions: initial segmentation, union mask, final numbered regions |
-| `query_NNNNN_2.jpg`, `query_NNNNN_3.jpg` | one per final painting: matching input, keypoints, RANSAC inliers, best candidates, answer vs ground truth |
 
 ## Reproduce
 
@@ -162,9 +153,7 @@ python weeks/week4/experiments/robustness_study.py               # threshold x r
 python weeks/week4/experiments/region_study.py                   # region selection options (results/regions/)
 ```
 
-All scripts except `task2_tables.py` (which reads no dataset) accept `--data DATA`. The notebooks (`experiments/*.ipynb`) open in Jupyter from the repository;
-`local_descriptors.ipynb` loads the saved Task 1 study from `results/task1/` (set `RERUN_STUDY = True` to recompute
-it, about 4 min).
+All scripts except `task2_tables.py` (which reads no dataset) accept `--data DATA`.
 
 ## Limitations
 
@@ -182,17 +171,16 @@ it, about 4 min).
 
 | Path | Content |
 | --- | --- |
-| `experiments/keypoints.ipynb` | Task 1: the three detectors on a query and its museum image |
-| `experiments/local_descriptors.ipynb` | Task 1: SIFT / ORB / BRISK on Harris, Harris-Laplace and DoG; rotation, scale and known pairs |
-| `experiments/pipeline_inspection.ipynb` | final method on every QSD1-W4 query: regions, keypoints, matches, scores, decisions |
 | `experiments/task2_*.py` | Task 2 studies (see Reproduce) |
 | [`results/task1/`](results/task1/) | Task 1 study records (`extraction.csv`, `synthetic.csv`, `pairs.csv`, `metadata.json`, [README](results/task1/README.md)) |
-| [`results/task1/figures/`](results/task1/figures/) | the 16 notebook figures as PNG (`00_keypoint_detectors.png`, `01_` … `10b_` by section) |
 | [`results/task2/`](results/task2/) | Task 2 tables and figures (metrics grid, ablation, failures, degenerate homography, threshold study) |
-| [`results/inspection/`](results/inspection/) | the 69 inspection figures as JPEG (see above) |
 | [`results/final/`](results/final/) | final method on QSD1-W4: `main.py evaluate` output, metrics (all / known paintings), per-painting answers |
 | [`results/task3/`](results/task3/) | Task 3: the Week 3 method on QSD1-W4, same files |
 | [`results/robustness/`](results/robustness/) | threshold × ratio grid, unknown margins, wrong rejections |
 | [`results/regions/`](results/regions/) | region selection options × sets, rejected regions (origin of `MIN_REGION_FRACTION`) |
 | [`task2_matching.md`](task2_matching.md) | Task 2 method and API for the per-painting scores |
 | [`submission/`](submission/) | QST1-W4 delivery |
+
+## Delivered file
+
+[`submission/QST1/method1/result.pkl`](submission/QST1/method1/result.pkl): final method on QST1-W4, 30 queries, 39 paintings, 9 answered `[-1]` (`python main.py predict --week 4`, then `python main.py validate --week 4`).

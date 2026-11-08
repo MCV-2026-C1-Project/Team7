@@ -10,5 +10,6 @@ python main.py predict  --week 4                   # QST1-W4 -> weeks/week4/subm
 python main.py validate --week 4
 ```
 
-Datasets go in `data/` (`BBDD/`, `qsd1_w4/`, `qst1_w4/`, ...). The figures of the notebooks and the inspection images
-mentioned in the Week 4 report are not included here.
+Blind-test file: [weeks/week4/submission/QST1/method1/result.pkl](weeks/week4/submission/QST1/method1/result.pkl).
+
+Datasets go in `data/` (`BBDD/`, `qsd1_w4/`, `qst1_w4/`, ...).

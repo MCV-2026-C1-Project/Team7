@@ -7,7 +7,7 @@
 <p align="center">
   <strong>Content-Based Image Retrieval · Computer Vision · MCV C1</strong>
   <br>
-  Week 1 baseline, Week 2 and Week 3 submissions
+  Week 1 baseline, Weeks 2, 3 and 4 submissions
 </p>
 
 <p align="center">
@@ -26,6 +26,7 @@ The Week 2 submission provides two fixed retrieval methods, optional development
 
 ## Navigation
 
+- [Week 4](#week-4)
 - [Week 3](#week-3)
 - [Overview](#overview)
 - [Methods](#methods)
@@ -39,6 +40,22 @@ The Week 2 submission provides two fixed retrieval methods, optional development
 - [Project structure](#project-structure)
 - [Design decisions](#design-decisions)
 - [Reproducibility and submission format](#reproducibility-and-submission-format)
+
+## Week 4
+
+Week 4 lives in [`Week 4/`](Week%204) (run from that folder: `python main.py evaluate --week 4 --set qsd1_w4 | predict --week 4 | validate --week 4`; report in [`Week 4/weeks/week4/README.md`](Week%204/weeks/week4/README.md)). Global descriptors are replaced by local features:
+
+1. **Regions:** wall-plane background removal, up to three paintings per photo, in reading order.
+2. **Keypoints and descriptors:** DoG keypoints with RootSIFT descriptors (Hellinger distance).
+3. **Matching:** Lowe ratio 0.75, cross-check, RANSAC homography; the score is the number of distinct inliers. A second painting inside a merged region is recovered from the unexplained keypoints.
+4. **Unknown paintings:** score >= 10 is accepted; below it the Week 3 colour + texture answer is used only if its best / second ratio is < 0.85; otherwise `[-1]`.
+
+| QSD1-W4 (30 photos, 39 paintings, 10 unknown) | mAP@1, all 39 | mAP@1, 29 known | Unknown F1 |
+| --- | ---: | ---: | ---: |
+| Week 3 method1 | 0.590 | 0.793 | 0 (never answers `[-1]`) |
+| Week 4 method1 | 0.974 | 0.966 | 0.952 |
+
+The thresholds were chosen on QSD1-W4, so these are optimistic. Delivered blind-test file: [`Week 4/weeks/week4/submission/QST1/method1/result.pkl`](Week%204/weeks/week4/submission/QST1/method1/result.pkl) (39 paintings, 9 `[-1]`; official score not yet published).
 
 ## Week 3
 
